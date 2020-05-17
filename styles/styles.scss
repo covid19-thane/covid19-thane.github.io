@@ -1,0 +1,641 @@
+// [Reset.exe xD]
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+li {
+  > i {
+    margin-right: 0.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none inside;
+}
+
+// [Custom Properties]
+
+:root {
+  --body-background: #ecf0f1;
+  --body-color: #4a5568;
+}
+
+// [Container Class - For Max-width & Centering]
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+// [Body - You Know It]
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  background-color: var(--body-background);
+  color: var(--body-color);
+}
+
+// [Header - with Branding & Links]
+
+header {
+  padding: 1.5rem 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  z-index: 999;
+}
+
+// [Navigation]
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .branding {
+    i {
+      color: #27ae60;
+    }
+
+    span {
+      color: #f34949;
+    }
+  }
+}
+
+// [SelectNav.JS - <ul> becomes a <select> menu on mobile screens ]
+
+.selectnav {
+  display: inline-block;
+  appearance: none;
+  -moz-appearance: none;
+  background-color: #e2e8f0;
+  font-size: 0.8rem;
+  font-family: inherit;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
+
+// [Some Media Queries for SelectNav]
+
+@media screen and (max-width: 989px) {
+  .js #nav {
+    display: none;
+  }
+  .js .selectnav {
+    display: block;
+  }
+}
+
+//  [Navigation Links]
+
+.header__links {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// [Language Swicther at Header]
+
+.lang__switch {
+  display: inline-block;
+  appearance: none;
+  -moz-appearance: none;
+  background-color: #2d3748;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: inherit;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+// [Wrapper for Nav Links ]
+
+.header__nav {
+  flex-basis: 80%;
+
+  li {
+    display: inline-block;
+  }
+
+  // Adding Margin Left for Every Next <li> item
+
+  li + li {
+    margin-left: 2rem;
+  }
+
+  a {
+    color: #718096;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    transition: color 180ms cubic-bezier(0.86, 0, 0.07, 1);
+
+    &:hover {
+      color: var(--body-color);
+      &::after {
+        width: 100%;
+      }
+    }
+
+    // [to get that nice hover effect on nav links]
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 0.25rem;
+      width: 0;
+      background-color: #fbc8c8;
+      z-index: -1;
+      transition: width 180ms cubic-bezier(0.86, 0, 0.07, 1);
+    }
+  }
+}
+
+// [Hero Area ]
+
+.hero {
+  padding: 5rem 0 4rem;
+}
+
+// [Hero Image - the Virus One]
+
+.hero__image {
+  width: 300px;
+  margin: 0 auto;
+}
+
+// [Content Wrapper for Hero ]
+
+.hero__content {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  > span {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+
+  .hero__intro {
+    color: #718096;
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero__links {
+    a {
+      display: inline-block;
+      font-size: 0.95rem;
+      padding: 0.45em 1.5em;
+      border-radius: 3px;
+      border: 1px solid #f34949;
+      transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    .knowmore {
+      background-color: #f34949;
+      color: #fff;
+      margin-right: 0.5rem;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--body-color);
+      }
+    }
+
+    .prevention {
+      &:hover {
+        background-color: #f34949;
+        color: #fff;
+      }
+    }
+  }
+
+  .xda__link {
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: #718096;
+    font-weight: 300;
+
+    &:hover {
+      color: var(--body-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+// [Stats]
+
+.stats {
+  padding: 2rem 0;
+
+  .updated__at {
+    color: #718096;
+    text-align: center;
+    display: block;
+    font-weight: normal;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+  }
+}
+
+// [The Stats Bar]
+
+.stats__bar {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+
+  // [Individual Stat Item - 4 Cards with diff. color treatment]
+
+  .stat__item {
+    padding: 2rem;
+    background-color: #fff;
+
+    &.confirmed {
+      color: #e74c3c;
+    }
+
+    &.active {
+      color: #3498db;
+    }
+
+    &.recovered {
+      color: #27ae60;
+    }
+
+    &.deceased {
+      color: #718096;
+    }
+
+    h3 {
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .number {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// [Symtoms]
+
+.symptoms {
+  padding: 3rem 0;
+}
+
+// [Symptoms Image]
+
+.s__art {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+// [to align the symptoms image and content]
+
+.symptoms__grid {
+  padding: 2rem 0;
+}
+
+// [Symptoms content]
+
+.s__content {
+  // [Adding a margin-top of 1.5rem for every next thing inside the content]
+
+  > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+// [Prevention]
+
+.prevention {
+  padding: 3.5rem 0;
+}
+
+// [Section Title - Used in all sections]
+
+.section__title {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+
+// Adding margin-top of 1.5rem for prevention cards {Mobile only}
+
+.p__item + .p__item {
+  margin-top: 1.5rem;
+}
+
+// Styling Prevention Card
+
+.p__item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  // Prevention Image
+
+  img {
+    width: 200px;
+    margin: 0 auto 1rem;
+  }
+
+  // Prevention Heading
+
+  h3 {
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  // Prevention Content
+
+  p {
+    color: #718096;
+    font-size: 0.94rem;
+    margin-top: 1rem;
+  }
+}
+
+// Resources
+
+.resources {
+  padding: 3rem 0;
+}
+
+.resources__grid {
+  // Adding margin-top of 3rem for resource items/columns {Mobile only}
+
+  > * + * {
+    margin-top: 3rem;
+  }
+
+  // Resources List - No Idea why I named it social 🤣🤣
+
+  .social {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    // Adding border-top for every next list item
+
+    li + li {
+      border-top: 3px solid #ecf0f1;
+    }
+
+    li {
+      padding: 1rem;
+    }
+
+    a {
+      transition: color 180ms ease;
+      &:hover {
+        color: #2ecc71;
+      }
+    }
+  }
+
+  // Social Links - Social Media Links Wrapper
+
+  .social__hub {
+    // Heading for Social Media
+    h3 {
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    // Social media lists <ul>
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+
+      // Social Links - <a>
+
+      a {
+        display: block;
+        text-align: center;
+        color: #fff;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        font-weight: 300;
+        border-radius: 3px;
+
+        &:hover {
+          filter: brightness(110%);
+        }
+
+        // Brand background colors
+
+        &.fb,
+        &.mess {
+          background-color: #3b5998;
+        }
+
+        &.twit {
+          background-color: #1da1f2;
+        }
+
+        &.insta {
+          background-color: #e1306c;
+        }
+
+        &.wa {
+          background-color: #075e54;
+        }
+
+        &.li {
+          background-color: #0077b5;
+        }
+
+        &.yt {
+          background-color: #ff0000;
+        }
+
+        &.tg {
+          background-color: #0088cc;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+
+footer {
+  background-color: var(--body-color);
+  color: #e2e8f0;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+
+  .credits {
+    margin-bottom: 0.75rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+// [Responsive Styles]
+
+@media (min-width: 769px) {
+  .hero__content {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+  }
+
+  // Forcing the width to be max at 600 on tablet screens
+
+  .p__item,
+  .resources__grid,
+  .symptoms__grid {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  // Increasing the root font at 900px for readability
+  html {
+    font-size: 15.5px;
+  }
+
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+  .hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero__content {
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+  .hero__image {
+    flex-basis: 40%;
+  }
+
+  .stats {
+    .stats__bar {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+        0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .prevention__grid,
+  .symptoms__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .symptoms__grid {
+    padding: 2rem 0;
+    max-width: none;
+  }
+
+  .s__art {
+    flex-basis: 50%;
+  }
+
+  .s__content {
+    flex-basis: 40%;
+  }
+
+  .p__item {
+    flex-basis: 30%;
+  }
+
+  .p__item + .p__item {
+    margin-top: 0;
+  }
+
+  .resources__grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: none;
+
+    > * {
+      flex-basis: 45%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1100px;
+  }
+}
