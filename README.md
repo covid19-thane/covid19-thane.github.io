@@ -18,6 +18,8 @@ If anyone want to contribute to the project, please contact me.
 Inspired by
 https://github.com/Coders-Of-XDA-OT/coronaSafety
 
+# Data Provider
+
 (Thane)
 https://www.covid19india.org/
 
@@ -25,7 +27,7 @@ https://www.covid19india.org/
 https://api.rootnet.in/
 
 (Kalyan (KDMC))
-https://www.kdmc.gov.in/
+https://kdmc-coronavirus-response-skdcl.hub.arcgis.com/
 
 
 # FAQ
