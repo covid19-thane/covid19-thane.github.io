@@ -1,6 +1,8 @@
 <img src="https://img.icons8.com/office/50/000000/coronavirus.png"/>
-<div>
-[![HitCount](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio.svg)](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio)
+
+<div align="center">
+ 
+[![Viewers](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio.svg)](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio)
 </div>
  
 # Corona Virus Situation in Thane District, India.
