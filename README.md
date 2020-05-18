@@ -1,6 +1,6 @@
 <img src="https://img.icons8.com/office/50/000000/coronavirus.png"/>
 
-<div align="center">
+<div>
  
 [![Viewers](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio.svg)](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio)
 </div>
