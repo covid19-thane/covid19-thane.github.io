@@ -10,13 +10,11 @@ An unoffical Covid-19 Tracker  for
 Ambarnath,Badlapur,Kalyan (KDMC),Thane District,Ulhasnagar
 
 Currenlty,
-only data's for Thane & India are auto updates!
+only data's for Thane & India are auto updated!
 
 Rest, 
-Ambarnath,Badlapur,Kalyan (KDMC),Ulhasnagar
-are manually updated.
-
-If anyone want to contribute to the project, please contact me.
+data for Ambarnath , Badlapur , Ulhasnagar , Kalyan are manually updated, 
+if the data is inaccurate or if anyone is willing to contribute to the project, please contact me!
 
 # Special Thanks
 
