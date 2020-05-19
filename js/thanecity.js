@@ -4,7 +4,7 @@ const lastUpdatedthane = document.querySelector(".last__updated");
 fetch(thanec)
   .then((response) => response.json())
   .then((thanec) => {
-    const myData = Object.values(bad.data.thane);
+    const myData = Object.values(thanec.data.thane);
     console.log(myData); // For Debugging
     document.querySelector(".stat__item.confirmedthane .number").textContent =
       myData[0];
