@@ -432,6 +432,18 @@ nav .branding span {
 .stats__bar .stat__item.deceased {
   color: #718096;
 }
+.stats__bar .stat__item.confirmedthane {
+  color: #e74c3c;
+}
+.stats__bar .stat__item.activethane {
+  color: #3498db;
+}
+.stats__bar .stat__item.recoveredthane {
+  color: #27ae60;
+}
+.stats__bar .stat__item.deceasedthane {
+  color: #718096;
+}
 .stats__bar .stat__item.confirmedtha {
   color: #e74c3c;
 }
