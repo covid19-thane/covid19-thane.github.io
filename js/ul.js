@@ -1,4 +1,4 @@
-const ul = "https://api.npoint.io/493ec6628785a08d7820";
+const ul = "https://api.npoint.io/2536b2b232c49e0ea1ee";
 const lastUpdatedul = document.querySelector(".last__updated");
 
 fetch(ul)
