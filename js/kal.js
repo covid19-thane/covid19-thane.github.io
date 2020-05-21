@@ -1,4 +1,4 @@
-const kal = "https://api.npoint.io/d1303f81c5a880990476";
+const kal = "https://api.npoint.io/2536b2b232c49e0ea1ee";
 const lastUpdatedkal = document.querySelector(".last__updated");
 
 fetch(kal)
