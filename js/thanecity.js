@@ -1,4 +1,4 @@
-const thanec = "https://api.npoint.io/196f7510e4ae464274d7";
+const thanec = "https://api.npoint.io/2536b2b232c49e0ea1ee";
 const lastUpdatedthane = document.querySelector(".last__updated");
 
 fetch(thanec)
