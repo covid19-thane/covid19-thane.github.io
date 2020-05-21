@@ -1,4 +1,4 @@
-const bad = "https://api.npoint.io/bc4aafd7496af962150e";
+const bad = "https://api.npoint.io/2536b2b232c49e0ea1ee";
 const lastUpdatedbad = document.querySelector(".last__updated");
 
 fetch(bad)
