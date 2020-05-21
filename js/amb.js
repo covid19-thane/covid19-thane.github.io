@@ -1,4 +1,4 @@
-const amb = "https://api.npoint.io/6169bcf498dbc6de03f4";
+const amb = "https://api.npoint.io/2536b2b232c49e0ea1ee";
 const lastUpdated = document.querySelector(".last__updatedamb");
 
 fetch(amb)
