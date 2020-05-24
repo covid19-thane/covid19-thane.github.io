@@ -8,17 +8,17 @@ fetch(ul)
     console.log(myData); // For Debugging
     document.querySelector(".stat__item.confirmedul .number").textContent =
       myData[0];
-    document.querySelector(".stat__item.confirmedul .new").textContent =
-      myData[2];
+    document.querySelector(".stat__item.confirmedul .new").textContent = `${
+      myData[0] - myData[2]}`;
     document.querySelector(".stat__item.activeul .number").textContent = `${
       myData[0] - myData[4] - myData[1]
     }`;
     document.querySelector(".stat__item.recoveredul .number").textContent =
       myData[4];
-    document.querySelector(".stat__item.recoveredul .new").textContent =
-      myData[5];	  
+    document.querySelector(".stat__item.recoveredul .new").textContent =`${
+      myData[4] - myData[5]}`;
     document.querySelector(".stat__item.deceasedul .number").textContent =
       myData[1];
-    document.querySelector(".stat__item.deceasedul .new").textContent =
-      myData[3];
+    document.querySelector(".stat__item.deceasedul .new").textContent =`${
+      myData[1] - myData[3]}`;
   });

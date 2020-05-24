@@ -8,17 +8,17 @@ fetch(kal)
     console.log(myData); // For Debugging
     document.querySelector(".stat__item.confirmedkal .number").textContent =
       myData[0];
-    document.querySelector(".stat__item.confirmedkal .new").textContent =
-      myData[2];
+    document.querySelector(".stat__item.confirmedkal .new").textContent = `${
+      myData[0] - myData[2]}`;
     document.querySelector(".stat__item.activekal .number").textContent = `${
       myData[0] - myData[4] - myData[1]
     }`;
     document.querySelector(".stat__item.recoveredkal .number").textContent =
       myData[4];
-    document.querySelector(".stat__item.recoveredkal .new").textContent =
-      myData[5];	  
+    document.querySelector(".stat__item.recoveredkal .new").textContent =`${
+      myData[4] - myData[5]}`;
     document.querySelector(".stat__item.deceasedkal .number").textContent =
       myData[1];
-    document.querySelector(".stat__item.deceasedkal .new").textContent =
-      myData[3];
+    document.querySelector(".stat__item.deceasedkal .new").textContent =`${
+      myData[1] - myData[3]}`;
   });
