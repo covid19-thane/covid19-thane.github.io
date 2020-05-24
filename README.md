@@ -6,32 +6,62 @@
 </div>
  
 # Corona Virus Situation in Thane District, India.
-An unoffical Covid-19 Tracker  for 
+An unoffical Covid-19 Dashboard  for 
 Ambarnath,Badlapur,Kalyan (KDMC),Thane District,Ulhasnagar
 
 Currenlty,
-only data's for Thane & India are auto updated!
+only data's for Thane Disrtict is auto updated!
 
 Rest, 
-data for Ambarnath , Badlapur , Ulhasnagar , Kalyan are manually updated, 
-if the data is inaccurate or if anyone is willing to contribute to the project, please contact me!
+data for Ambarnath , Badlapur , Ulhasnagar , Kalyan & Dombivli (KDMC) , Thane City are manually updated.
 
 # Special Thanks
 
 Inspired by
+
+https://github.com/covid19india/covid19india-react
+
 https://github.com/Coders-Of-XDA-OT/coronaSafety
 
-# Data Provider
 
-(Thane)
+# Data
+
+(Thane District)
 https://www.covid19india.org/
 
-(India)
-https://api.rootnet.in/
+(Thane City)
+https://thanecity.gov.in/
 
-(Kalyan (KDMC))
+(Kalyan & Dombivli (KDMC))
+https://www.kdmc.gov.in/
+
+(Ulhasnagar)
+https://umc.gov.in/
+
+(Badlapur)
+https://kbmc.gov.in/
+
+(Ambarnath)
+http://ambarnathcouncil.net/
+
+# Twitter Users
+
+https://twitter.com/pphantom2804
+
+https://twitter.com/Mibadlapurkar
+
+https://twitter.com/lavinak20
+
+# Official Dashboards
+
+KDMC
+----
 https://kdmc-coronavirus-response-skdcl.hub.arcgis.com/
 
+
+Thane
+-----
+https://essentials.thanecity.gov.in/
 
 # FAQ
 
