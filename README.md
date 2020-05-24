@@ -69,13 +69,15 @@ Are you official?
 -----------------
 No
 
-Who are you?
-------------
-We are a group of dedicated volunteers who curate and verify the data coming from several sources. We extract the details, like a patient's relationship with other patients to identify local and community transmissions, travel history and status. We never collect or expose any personally identifiable data regarding the patients.
-Why are you guys putting in time and resources to do this while not gaining a single penny from it?
-Because it affects all of us. Today it's someone else who is getting infected; tomorrow it could be us. We need to prevent the spread of this virus. We need to document the data so that people with knowledge can use this data to make informed decisions.
+# Social
 
 https://covid19-thane.github.io
+
+https://instagram.com/Covid19Thane
+
+https://twitter.com/Covid19Thane
+
+https://t.me/Covid19Thane
 
 # Team
 [@rushiranpise](https://t.me/rushiranpise)
