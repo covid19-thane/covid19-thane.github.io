@@ -6,19 +6,19 @@ fetch(mn)
   .then((mn) => {
     const myData = Object.values(mn.data.mira);
     console.log(myData); // For Debugging
-    document.querySelector(".stat__item.confirmedmn .number").textContent =
+    document.querySelector(".stat__item.confirmedmb .number").textContent =
       myData[0];
-    document.querySelector(".stat__item.confirmedmn .new").textContent = `${
+    document.querySelector(".stat__item.confirmedmb .new").textContent = `${
       myData[0] - myData[2]}`;
-    document.querySelector(".stat__item.activemn .number").textContent = `${
+    document.querySelector(".stat__item.activemb .number").textContent = `${
       myData[0] - myData[4] - myData[1]
     }`;
-    document.querySelector(".stat__item.recoveredmn .number").textContent =
+    document.querySelector(".stat__item.recoveredmb .number").textContent =
       myData[4];
-    document.querySelector(".stat__item.recoveredmn .new").textContent =`${
+    document.querySelector(".stat__item.recoveredmb .new").textContent =`${
       myData[4] - myData[5]}`;
-    document.querySelector(".stat__item.deceasedmn .number").textContent =
+    document.querySelector(".stat__item.deceasedmb .number").textContent =
       myData[1];
-    document.querySelector(".stat__item.deceasedmn .new").textContent =`${
+    document.querySelector(".stat__item.deceasedmb .new").textContent =`${
       myData[1] - myData[3]}`;
   });
