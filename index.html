@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -359,6 +359,7 @@
                             <p class="spacer"></p>
                             <p>Updated Everyday after 6:30 p.m.</p>
                         </td>
+			<td colspan="3" style="padding-bottom: 0px;"><p class="spacer"></p><p id="date"></p>
                     </tr>
                 </table>
                 <div class="header fadeInUp" style="animation-delay: 2s;">
@@ -446,6 +447,13 @@
               return i;
             }
         </script>
+<script>
+n = new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+</script>
         <script>
             $(function(){
             		$('table').tablesorter({
