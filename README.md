@@ -7,13 +7,13 @@
  
 # Corona Virus Situation in Thane District, India.
 An unoffical Covid-19 Dashboard  for 
-Ambarnath,Badlapur,Kalyan (KDMC),Thane District,Ulhasnagar
+Ambarnath,Badlapur,Kalyan (KDMC),Mira Bhayandar,Navi Mumbai,Thane District,Ulhasnagar
 
 Currenlty,
 only data's for Thane Disrtict is auto updated!
 
 Rest, 
-data for Ambarnath , Badlapur , Ulhasnagar , Kalyan & Dombivli (KDMC) , Thane City are manually updated.
+data for Ambarnath , Badlapur , Ulhasnagar , Kalyan & Dombivli (KDMC) , Mira Bhayandar , Navi Mumbai , Thane City are manually updated based on Press Releases.
 
 # Special Thanks
 
@@ -23,8 +23,20 @@ https://github.com/covid19india/covid19india-react
 
 https://github.com/Coders-Of-XDA-OT/coronaSafety
 
+# Twitter Users
 
-# Data
+https://twitter.com/pphantom2804
+
+https://twitter.com/Mibadlapurkar
+
+https://twitter.com/FullyAmbernath
+
+https://twitter.com/lavinak20
+
+https://twitter.com/iSaurabh28
+
+
+# Official Sites
 
 (Thane District)
 https://www.covid19india.org/
@@ -35,6 +47,12 @@ https://thanecity.gov.in/
 (Kalyan & Dombivli (KDMC))
 https://www.kdmc.gov.in/
 
+(Navi Mumbai)
+https://www.nmmc.gov.in/
+
+(Mira Bhayandar)
+https://www.mbmc.gov.in/
+
 (Ulhasnagar)
 https://umc.gov.in/
 
@@ -43,14 +61,6 @@ https://kbmc.gov.in/
 
 (Ambarnath)
 http://ambarnathcouncil.net/
-
-# Twitter Users
-
-https://twitter.com/pphantom2804
-
-https://twitter.com/Mibadlapurkar
-
-https://twitter.com/lavinak20
 
 # Official Dashboards
 
@@ -67,7 +77,7 @@ https://essentials.thanecity.gov.in/
 
 Are you official?
 -----------------
-No
+No, Not at all :)
 
 # Social
 
@@ -80,4 +90,9 @@ https://twitter.com/Covid19Thane
 https://t.me/Covid19Thane
 
 # Team
-[@rushiranpise](https://t.me/rushiranpise)
+[Rushi Ranpise](https://t.me/rushiranpise)
+
+[Saurabh Patil](https://twitter.com/iSaurabh28)
+
+
+ #StayHome #StaySafe
