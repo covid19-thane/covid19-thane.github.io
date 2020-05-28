@@ -38,9 +38,6 @@ https://twitter.com/iSaurabh28
 
 # Official Sites
 
-(Thane District)
-https://www.covid19india.org/
-
 (Thane City)
 https://thanecity.gov.in/
 
