@@ -80,6 +80,8 @@ No, Not at all :)
 
 https://covid19-thane.github.io
 
+https://www.facebook.com/Covid19Thane-105832901156413/
+
 https://instagram.com/Covid19Thane
 
 https://twitter.com/Covid19Thane
