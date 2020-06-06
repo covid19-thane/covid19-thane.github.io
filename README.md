@@ -4,11 +4,7 @@
  
 [![Viewers](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio.svg)](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio)
 </div>
-<html><body><div>
- <h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">Visitors:&nbsp;<a><img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7349627&amp;style=0007&amp;nbdigits=8&amp;type=ip&amp;initCount=0" title="Visitors" alt="Visitors" border="0"></a></h5>
-<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">Refreshed:&nbsp;<a><img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7351848&amp;style=0007&amp;nbdigits=8&amp;type=page&amp;initCount=287" title="Web Counter" alt="Web Counter" border="0"></a></h5></div>
- </body></html>
- 
+
 # Corona Virus Situation in Thane District, India.
 An unoffical Covid-19 Dashboard  for 
 Ambarnath,Badlapur,Bhiwandi,Kalyan (KDMC),Mira Bhayandar,Navi Mumbai,Thane District,Ulhasnagar
