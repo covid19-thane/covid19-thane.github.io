@@ -1,5 +1,5 @@
 const bhi = "https://api.npoint.io/ee4e3b00902ddc3b8948";
-const lastUpdatedbad = document.querySelector(".last__updated");
+const lastUpdatedbhi = document.querySelector(".last__updated");
 
 fetch(bhi)
   .then((response) => response.json())
