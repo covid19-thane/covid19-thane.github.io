@@ -7,7 +7,7 @@
  
 # Corona Virus Situation in Thane District, India.
 An unoffical Covid-19 Dashboard  for 
-Ambarnath,Badlapur,Kalyan (KDMC),Mira Bhayandar,Navi Mumbai,Thane District,Ulhasnagar
+Ambarnath,Badlapur,Bhiwandi,Kalyan (KDMC),Mira Bhayandar,Navi Mumbai,Thane District,Ulhasnagar
 
 Currenlty,
 only data's for Thane Disrtict is auto updated!
@@ -23,7 +23,7 @@ https://github.com/covid19india/covid19india-react
 
 https://github.com/Coders-Of-XDA-OT/coronaSafety
 
-# Twitter Users
+# Twitter Source
 
 https://twitter.com/pphantom2804
 
@@ -33,7 +33,17 @@ https://twitter.com/FullyAmbernath
 
 https://twitter.com/lavinak20
 
-https://twitter.com/iSaurabh28
+https://twitter.com/DhirajRMishra21
+
+https://twitter.com/NMMConline
+
+https://twitter.com/DigiThane
+
+https://twitter.com/KDMCOfficial
+
+https://twitter.com/badlapurcity
+
+https://twitter.com/rais_shk
 
 
 # Official Sites
@@ -53,6 +63,9 @@ https://www.mbmc.gov.in/
 (Ulhasnagar)
 https://umc.gov.in/
 
+(Bhiwandi)
+https://bncmc.gov.in/
+
 (Badlapur)
 https://kbmc.gov.in/
 
@@ -61,10 +74,25 @@ http://ambarnathcouncil.net/
 
 # Official Dashboards
 
+Vasai Virar
+-
+https://vvcmc.in/vvmc/corona/local_host/index.html
+
+BMC
+----
+https://stopcoronavirus.mcgm.gov.in/
+
+Panvel
+--
+http://panvelcovidcare.cdaat.in/
+
+NMMC
+----
+http://nmmccovid19.in/
+
 KDMC
 ----
 https://kdmc-coronavirus-response-skdcl.hub.arcgis.com/
-
 
 Thane
 -----
@@ -79,8 +107,6 @@ No, Not at all :)
 # Social
 
 https://covid19-thane.github.io
-
-https://m.facebook.com/Covid19Thane-105832901156413
 
 https://instagram.com/Covid19Thane
 
