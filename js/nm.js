@@ -1,4 +1,4 @@
-const nm = "https://api.npoint.io/06000168372c88bd127f";
+const nm = "https://api.npoint.io/ee4e3b00902ddc3b8948";
 const lastUpdatednm = document.querySelector(".last__updated");
 
 fetch(nm)
