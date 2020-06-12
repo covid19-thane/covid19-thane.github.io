@@ -55,7 +55,7 @@
                 <div class="header fadeInUp" style="animation-delay: 1s;">
                     <div class="actions">
                         <h5>
-                            <span id="time"></span>
+                            <span class="notranslate" id="time"></span>
                             <br>
                             <br>Thane District
 
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="level-item is-gray fadeInUp" style="animation-delay: 1.3s;">
-                        <h5 class="heading">Deceased</h5>
+                        <h5 class="heading">Deaths</h5>
                         <div class="stat__item deceasedtha">
                             <h1 class="title has-text-grey">
                                 <span class="number">Waiting...</span>
@@ -148,21 +148,21 @@
                                 </div>
                             </th>
                             <th>
-                                <div class="heading-content"><abbr class="is-confirmed" title="confirmed">Cnfrmd</abbr>
+                                <div class="heading-content"><abbr class="is-confirmed" title="confirmed">Confirmed</abbr>
 
                                 </div>
                             </th>
                             <th>
-                                <div class="heading-content"><abbr class="is-active" title="active">Actv</abbr>
+                                <div class="heading-content"><abbr class="is-active" title="active">Active</abbr>
 
                             </th>
                             <th>
-                                <div class="heading-content"><abbr class="is-recovered" title="recovered">Rcvrd</abbr>
+                                <div class="heading-content"><abbr class="is-recovered" title="recovered">Recovered</abbr>
 
                                 </div>
                             </th>
                             <th>
-                                <div class="heading-content"><abbr class="is-deaths" title="deaths">Dcsd</abbr>
+                                <div class="heading-content"><abbr class="is-deaths" title="deaths">Deaths</abbr>
 
                                 </div>
                             </th>
@@ -224,7 +224,7 @@
 			    <tr>
                             <td>
                                 <div class="title-chevron">
-                                    <span class="title-icon">Bhiwandi City</span>
+                                    <span class="title-icon">Bhiwandi</span>
                                 </div>
                             </td>
                             <td>
@@ -276,7 +276,7 @@
 			<tr>
                             <td>
                                 <div class="title-chevron">
-                                    <span class="title-icon">Mira Bhayandar</span>
+                                    <span class="title-icon">Mira Bhaindar</span>
                                 </div>
                             </td>
                             <td>
@@ -328,7 +328,7 @@
                         <tr>
                             <td>
                                 <div class="title-chevron">
-                                    <span class="title-icon">Thane City</span>
+                                    <span class="title-icon">Thane</span>
                                 </div>
                             </td>
                             <td>
@@ -388,6 +388,10 @@
                     </tr>
                 </table>
                 <div class="header fadeInUp" style="animation-delay: 2s;">
+							<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">
+				<a href="#googtrans(en|hi)" class="lang-es lang-select" data-lang="ja">#Hindi</a>&nbsp;
+				<a href="#googtrans(en|mr)" class="lang-es lang-select" data-lang="ja">#Marathi</a>&nbsp;
+				<a href="#googtrans(en|en)" class="lang-es lang-select" data-lang="ja">#English</a></h5>
                     <div class="actions">
                         <h5 class="table-fineprint fadeInUp" style="animation-delay: 2s;">Official Sites</h5>
                     </div>
@@ -458,12 +462,41 @@
               return i;
             }
         </script>
+	    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    }
+
+	function triggerHtmlEvent(element, eventName) {
+	  var event;
+	  if (document.createEvent) {
+		event = document.createEvent('HTMLEvents');
+		event.initEvent(eventName, true, true);
+		element.dispatchEvent(event);
+	  } else {
+		event = document.createEventObject();
+		event.eventType = eventName;
+		element.fireEvent('on' + event.eventType, event);
+	  }
+	}
+
+	jQuery('.lang-select').click(function() {
+	  var theLang = jQuery(this).attr('data-lang');
+	  jQuery('.goog-te-combo').val(theLang);
+
+	  //alert(jQuery(this).attr('href'));
+	  window.location = jQuery(this).attr('href');
+	  location.reload();
+
+	});
+  </script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
 n = new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
 d = n.getDate();
-document.getElementById("date").innerHTML = "As of" + " " + d + "/" + m + "/" + y;
+document.getElementById("date").innerHTML = "Up to" + " " + d + "/" + m + "/" + y;
 </script>
         <script>
             $(function(){
