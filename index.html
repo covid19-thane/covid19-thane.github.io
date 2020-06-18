@@ -43,6 +43,52 @@
 	<link href="./styles/main.9022bc6f.chunk.css" rel="stylesheet">
 	<script src="./js/jquery-1.2.6.min.js"></script>
 	<script src="./js/jquery.tablesorter.min.js"></script>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+<style>
+.text {
+  font-size: 40px;
+  transition: 2s all;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.spaced {
+  letter-spacing: 20px;
+}
+
+.icons {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.icons .advice {
+  margin: 1rem;
+  transition: 0.5s all;
+  text-align: center;
+  animation: anim 2s forwards;
+}
+.icons .advice .fas {
+  font-size: 30px;
+  animation: anim 2s forwards;
+}
+
+@keyframes anim {
+  to {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .spaced {
+    letter-spacing: 8px;
+  }
+}
+</style>
 </head>
 
 <body onload="startTime()">
@@ -408,7 +454,30 @@
 				<a href="#googtrans(en|mr)" class="lang-es lang-select" data-lang="ja">#Marathi</a>&nbsp;
 				<a href="#googtrans(en|en)" class="lang-es lang-select" data-lang="ja">#English</a></h5>
 				<h5><marquee behavior="alternate" style="color: red;"><a href="https://www.mygov.in/aarogya-setu-app">👉 Download Aarogya Setu App 👈</a></marquee></h5>
-				<h5><marquee behavior="scroll" direction="up" scrollamount="1">👆</marquee>Scroll Up For Detailed Report on the Cases Below!<marquee behavior="scroll" direction="down" scrollamount="1">👇</marquee></h5>
+				<h5><marquee behavior="scroll" direction="up" scrollamount="1">👆&nbsp;Scroll Up For Detailed Report on the Cases Below!&nbsp;👇</marquee></h5>
+				
+				<h1 class="text">
+Social Distancing
+</h1>
+<p>
+Help prevent the spread of Coronavirus <i class="fas fa-virus"></i> by
+maintaining at least 1m (3ft) between you and others.
+</p>
+<div class="icons">
+<span class="advice">
+<i class="fas fa-handshake-alt-slash"></i>
+<h3>Avoid physical contact</h3>
+</span>
+<span class="advice">
+<i class="fas fa-hands-wash"></i>
+<h3>Wash your hands</h3>
+</span>
+<span class="advice">
+<i class="fas fa-head-side-mask"></i>
+<h3>Use mask</h3>
+</span>
+</div>
+				
 				<div class="actions">
 					<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s;">Official Sites</h5>
 				</div>
