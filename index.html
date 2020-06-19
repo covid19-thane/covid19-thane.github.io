@@ -499,7 +499,7 @@ maintaining at least 1m (3ft) between you and others.
 	</div>
 	<footer class="fadeInUp" style="animation-delay: 2s;">
 		<h5>#StayHome #StaySafe</h5>
-		<div class="link"> <a href="https://covid19-thane.github.io" target="_blank" rel="noopener noreferrer">covid19thane</a>
+		<div class="link"> <a href="https://covid19-thane.github.io/hospitals" target="_blank" rel="noopener noreferrer">covid19thane hospitals</a>
 		</div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
         &nbsp;&nbsp;
 
@@ -524,23 +524,23 @@ maintaining at least 1m (3ft) between you and others.
 		</div>
 	</footer>
 	<script>
-		function startTime() {
-		              var today = new Date();
-		              var h = today.getHours();
-		              var m = today.getMinutes();
-		              var s = today.getSeconds();
-		              m = checkTime(m);
-		              s = checkTime(s);
-		              document.getElementById('time').innerHTML =
-		              h + ":" + m + ":" + s;
-		              document.getElementById('time').innerHTML=today;
-		              var t = setTimeout(startTime, 500);
-		            }
-		            function checkTime(i) {
-		              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-		              return i;
-		            }
-	</script>
+            function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('time').innerHTML =
+              h + ":" + m + ":" + s;
+              document.getElementById('time').innerHTML=today;
+              var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+        </script>
 		<script>
 	window.onload = function () {
   document.querySelector(".text").classList.add("spaced");
