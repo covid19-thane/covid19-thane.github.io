@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Rushi Ranpise" />
+	<meta name="classification" content="Covid-19 Dashboard" />
+	<meta name="description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
+	<meta name="keywords" content="corona, covid19, covid-19. safety, ambarnath, badlapur, kalyan , dombivali , thane district, thane city , city , ulhasnagar , dashboard, tracking, page, open, source, github, disease, facebook, instagram, whatsapp, helpline, district, india" />
+	<meta name="referrer" content="origin-when-crossorigin" />
+	<meta name="robots" content="index,follow" />
+	<meta name="title" content="Covid-19 Dashboard" />
+	<title>Covid-19 Dashboard</title>
+	<link rel="shortcut icon" href="https://img.icons8.com/office/50/000000/coronavirus.png" type="image/x-icon">
+	<meta property="og:title" content="Covid-19 Dashboard">
+	<meta property="og:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar.">
+	<meta property="og:image" content="https://img.icons8.com/office/50/000000/coronavirus.png">
+	<meta property="og:url" content="http://covid19-thane.github.io">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" value="@covid19thane" />
+	<meta property="twitter:url" content="https://covid19-thane.github.io" />
+	<meta property="twitter:title" content="Covid-19 Dashboard" />
+	<meta property="twitter:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
+	<meta property="twitter:image" content="https://img.icons8.com/office/50/000000/coronavirus.png" />
+	<link rel="preload" importance="low" href="/fonts/Archia/archia-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" importance="low" href="/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" importance="low" href="/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<style>
+		@font-face{font-family:Archia;src:url(/fonts/Archia/archia-semibold-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-semibold-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-semibold-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-semibold-webfont.woff) format('woff'),url(/fonts/Archia/archia-semibold-webfont.ttf) format('truetype');font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:Archia;src:url(/fonts/Archia/archia-medium-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-medium-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-medium-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-medium-webfont.woff) format('woff'),url(/fonts/Archia/archia-medium-webfont.ttf) format('truetype');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Archia;src:url(/fonts/Archia/archia-bold-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-bold-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-bold-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-bold-webfont.woff) format('woff'),url(/fonts/Archia/archia-bold-webfont.ttf) format('truetype');font-weight:900;font-style:normal;font-display:swap}
+	</style>
+	<link href="./styles/main.9022bc6f.chunk.css" rel="stylesheet">
+	<script src="./js/jquery-1.2.6.min.js"></script>
+</head>
+
+<body onload="startTime()">
+	<div id="root" style="margin: auto; height: auto; width: auto; padding-right: 0px; padding-left: 0px;">
+		<div class="App">
+			<div class="Navbar" style="padding-right: 0px; padding-left: 0px;">
+				<div class="navbar-right"> <span>
+                                            <a href="https://github.com/covid19-thane/covid19-thane.github.io/blob/master/README.md">Info</a>
+                                          </span>
+				</div>
+				<div class="navbar-middle"> <a href="">Covid19
+                                            <span>Thane</span>
+                                          </a>
+				</div>
+				<div class="navbar-left">
+					<div class="custom-control custom-switch">
+						<input type="checkbox" class="custom-control-input" id="darkSwitch">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+						</svg>
+					</div>
+					<script src="./js/dark-mode-switch.min.js"></script>
+				</div>
+			</div>
+			<table>
+				<caption>
+					<h1>Covid-19 Thane Hospitals</h1>
+				</caption>
+				<thead>
+					<tr align="center">
+						<th class="state-heading">
+							<div class="heading-content"><abbr title="State">City</abbr>
+								<div style="display: initial;">
+									<div class="arrow-down"></div>
+								</div>
+							</div>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a onclick="toggleRow(this);">Ambarnath</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">	<b>Hospital Name:</b>
+							</p>
+							<p style="color:black;">Bijankur or City Hospital</p>
+							<p style="color:red;">Address:</p>
+							<p style="color:black;">Opp.Jai Bhawani Appt.Near Anand Park,Navre Nagar, Ambernath, Maharashtra 421501</p>
+							</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow 2">
+						<td><a onclick="toggleRow(this);">Badlapur</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">	<b>Hospital Name:</b>
+							</p>
+							<p style="color:black;">Central Hospital</p>
+							<p style="color:red;">Address:</p>
+							<p style="color:black;">Poddar Samrudhi Evergreen, Badlapur-Karjat Road, Badlapur East, Thane 421503</p>
+							</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow">
+						<td><a onclick="toggleRow(this);">Bhiwandi</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">	<b>Hospital Name:</b>
+							</p>
+							<p style="color:black;">Indira Gandhi Hospital Bhiwandi</p>
+							<p style="color:red;">Address:</p>
+							<p style="color:black;">Near Bhiwandi Court, Agra Road, Bhiwandi, Dist.- Thane 421302</p>
+							</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow">
+						<td><a onclick="toggleRow(this);">BMC</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">Kindly Visit <a href="https://cghsmumbai.gov.in/sites/default/files/circulars_notice_documents/COVID-19_BMC.pdf">Here</a>
+							</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow">
+						<td><a onclick="toggleRow(this);">KDMC</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">Kindly Visit <a href="https://www.kdmc.gov.in/RtsPortal/cache/SHOW_DOCS/Updated-hospital-list.pdf">Here</a>
+							</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow">
+						<td><a onclick="toggleRow(this);">Mumbai</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">Kindly Visit <a href="https://stopcoronavirus.mcgm.gov.in/key-updates-trends">Here</a>
+							</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow">
+						<td><a onclick="toggleRow(this);">Mira Bhaindar</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">	<b>Hospital Name:</b>
+							</p>
+							<p style="color:black;">1. Pt. Bhimsen Joshi Hospital, Bhayandar ( 150 beds)
+								<br>
+								<br>2. Bhakti Vedant Hospital & Research Institute (100 beds)
+								<br>
+								<br>3. Family Care Hospital, Mira Road (100 beds)
+								<br>
+								<br>4. Wockhardt Hospital, Mira Road (90 beds)
+								<br>
+								<br>5. Sheth P V Doshi Hospital (Conducted by Bhakti Vedant Hospital), Mira Road (40 beds)
+								<br>
+								<br>6. Tanwar Hospital, Mira Road (25 beds)
+								<br>
+								<br>7. Thunga Hospital, Bhayandar (25 beds)
+								<br>
+								<br>8. Gurukrupa Hospital, Mira Road (24 beds)
+								<br>
+								<br>9. Shalom Medicare Pvt Ltd, Bhayandar (30 beds)
+								<br>
+								<br>10. Sham Bharati Hospital, Mira Road (20 beds)
+								<br>
+								<br>11. Padmaja Hospital & ICU, Bhayandar (30 beds)
+								<br>
+								<br>12. Global Multispeciality Hospital, Mira Road (30 beds)
+								<br>
+								<br>13. Orbit Hospital, Mira Road (25 beds)
+								<br>
+								<br>14. Ashish Hospital, Bhayandar (20 beds)
+								<br>
+								<br>15. Galaxy Hospital, Mira Road (20 beds)
+								<br>
+								<br>16. Neptune Hospital, Mira Road (25 beds)</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow">
+						<td><a onclick="toggleRow(this);">Navi Mumbai</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">Kindly Visit <a href="https://navimumbai.city/list-of/hospitals">Here</a>
+							</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow">
+						<td><a onclick="toggleRow(this);">Thane</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">Kindly Visit <a href="https://covidthane.org/availabiltyOfHospitalBeds.html">Here</a>
+							</p>
+						</td>
+					</tr>
+					<tr></tr>
+					<tr align="center" class="parentRow">
+						<td><a onclick="toggleRow(this);">Ulhasnagar</a>
+						</td>
+					</tr>
+					<tr style="display: none;" class="subRow">
+						<td>
+							<p style="color:red;">Kindly Visit <a href="http://www.covid.umcgov.in/AvailabilityOfHospitalBeds.aspx">Here</a>
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<footer class="fadeInUp" style="animation-delay: 2s;">
+		<h5>#StayHome #StaySafe</h5>
+		<div class="link"> <a href="https://covid19-thane.github.io/" target="_blank" rel="noopener noreferrer">covid19thane dashboard</a>
+		</div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
+        &nbsp;&nbsp;
+
+        
+                                                    <svg
+                                                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                      <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"
+                fill="#33a667"
+            />
+                                                    </svg>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        
+                                                    <span>Share it on Whatsapp&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+                                                  </a>
+		<a href="https://t.me/covid19thane" class="button telegram" target="_blank" rel="noopener noreferrer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+			</svg> <span>Telegram</span>
+		</a>
+	</footer>
+	<script>
+		function toggleRow(e){
+		    var subRow = e.parentNode.parentNode.nextElementSibling;
+		    subRow.style.display = subRow.style.display === 'none' ? 'table-row' : 'none';    
+		}
+	</script>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script>
+		var OneSignal = window.OneSignal || [];
+		              OneSignal.push(function() {
+		                OneSignal.init({
+		                  appId: "9a9b2c9b-843c-4f45-bea7-726c5ebc60d1",
+		                });
+		              });
+	</script>
+</body>
+
+</html>
