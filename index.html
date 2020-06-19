@@ -1,122 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <meta name="author" content="Rushi Ranpise" />
-            <meta name="classification" content="Covid-19 Dashboard" />
-            <meta name="description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
-            <meta name="keywords" content="corona, covid19, covid-19. safety, ambarnath, badlapur, kalyan , dombivali , thane district, thane city , city , ulhasnagar , dashboard, tracking, page, open, source, github, disease, facebook, instagram, whatsapp, helpline, district, india" />
-            <meta name="referrer" content="origin-when-crossorigin" />
-            <meta name="robots" content="index,follow" />
-            <meta name="title" content="Covid-19 Dashboard" />
-            <title>Covid-19 Dashboard</title>
-            <link rel="shortcut icon" href="https://img.icons8.com/office/50/000000/coronavirus.png" type="image/x-icon">
-              <meta property="og:title" content="Covid-19 Dashboard">
-                <meta property="og:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar.">
-                  <meta property="og:image" content="https://img.icons8.com/office/50/000000/coronavirus.png">
-                    <meta property="og:url" content="http://covid19-thane.github.io">
-                      <meta name="twitter:card" content="summary_large_image">
-                        <meta name="twitter:site" value="@covid19thane" />
-                        <meta property="twitter:url" content="https://covid19-thane.github.io" />
-                        <meta
-      property="twitter:title"
-      content="Covid-19 Dashboard"
-    />
-                        <meta
-      property="twitter:description"
-      content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar."
-    />
-                        <meta
-      property="twitter:image"
-      content="https://img.icons8.com/office/50/000000/coronavirus.png"
-    />
-                        <link rel="preload" importance="low" href="/fonts/Archia/archia-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-                          <link rel="preload" importance="low" href="/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-                            <link rel="preload" importance="low" href="/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-                              <style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Rushi Ranpise" />
+	<meta name="classification" content="Covid-19 Dashboard" />
+	<meta name="description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
+	<meta name="keywords" content="corona, covid19, covid-19. safety, ambarnath, badlapur, kalyan , dombivali , thane district, thane city , city , ulhasnagar , dashboard, tracking, page, open, source, github, disease, facebook, instagram, whatsapp, helpline, district, india" />
+	<meta name="referrer" content="origin-when-crossorigin" />
+	<meta name="robots" content="index,follow" />
+	<meta name="title" content="Covid-19 Dashboard" />
+	<title>Covid-19 Dashboard</title>
+	<link rel="shortcut icon" href="https://img.icons8.com/office/50/000000/coronavirus.png" type="image/x-icon">
+	<meta property="og:title" content="Covid-19 Dashboard">
+	<meta property="og:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar.">
+	<meta property="og:image" content="https://img.icons8.com/office/50/000000/coronavirus.png">
+	<meta property="og:url" content="http://covid19-thane.github.io">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" value="@covid19thane" />
+	<meta property="twitter:url" content="https://covid19-thane.github.io" />
+	<meta property="twitter:title" content="Covid-19 Dashboard" />
+	<meta property="twitter:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
+	<meta property="twitter:image" content="https://img.icons8.com/office/50/000000/coronavirus.png" />
+	<link rel="preload" importance="low" href="/fonts/Archia/archia-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" importance="low" href="/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" importance="low" href="/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<style>
 		@font-face{font-family:Archia;src:url(/fonts/Archia/archia-semibold-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-semibold-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-semibold-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-semibold-webfont.woff) format('woff'),url(/fonts/Archia/archia-semibold-webfont.ttf) format('truetype');font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:Archia;src:url(/fonts/Archia/archia-medium-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-medium-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-medium-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-medium-webfont.woff) format('woff'),url(/fonts/Archia/archia-medium-webfont.ttf) format('truetype');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Archia;src:url(/fonts/Archia/archia-bold-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-bold-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-bold-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-bold-webfont.woff) format('woff'),url(/fonts/Archia/archia-bold-webfont.ttf) format('truetype');font-weight:900;font-style:normal;font-display:swap}
 	</style>
-                              <link href="./styles/main.9022bc6f.chunk.css" rel="stylesheet">
-                                <script src="./js/jquery-1.2.6.min.js"></script>
-                                <script src="./js/jquery.tablesorter.min.js"></script>
-                                <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
-                                  <style>
-.text {
-  font-size: 40px;
-  transition: 2s all;
-  text-align: center;
-  margin-bottom: 40px;
-}
+	<link href="./styles/main.9022bc6f.chunk.css" rel="stylesheet">
+	<script src="./js/jquery-1.2.6.min.js"></script>
+	<script src="./js/jquery.tablesorter.min.js"></script>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+	<style>
+		.text {
+		  font-size: 40px;
+		  transition: 2s all;
+		  text-align: center;
+		  margin-bottom: 40px;
+		}
+		
+		p {
+		  text-align: center;
+		  font-size: 17px;
+		}
+		
+		.spaced {
+		  letter-spacing: 20px;
+		}
+		
+		.icons {
+		  margin-top: 2rem;
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-around;
+		}
+		.icons .advice {
+		  margin: 1rem;
+		  transition: 0.5s all;
+		  text-align: center;
+		  animation: anim 2s forwards;
+		}
+		.icons .advice .fas {
+		  font-size: 30px;
+		  animation: anim 2s forwards;
+		}
+		
+		@keyframes anim {
+		  to {
+		    padding: 16px;
+		  }
+		}
+		@media screen and (max-width: 420px) {
+		  .spaced {
+		    letter-spacing: 8px;
+		  }
+		}
+	</style>
+</head>
 
-p {
-  text-align: center;
-  font-size: 17px;
-}
-
-.spaced {
-  letter-spacing: 20px;
-}
-
-.icons {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.icons .advice {
-  margin: 1rem;
-  transition: 0.5s all;
-  text-align: center;
-  animation: anim 2s forwards;
-}
-.icons .advice .fas {
-  font-size: 30px;
-  animation: anim 2s forwards;
-}
-
-@keyframes anim {
-  to {
-    padding: 16px;
-  }
-}
-@media screen and (max-width: 420px) {
-  .spaced {
-    letter-spacing: 8px;
-  }
-}
-</style>
-                                </head>
-                                <body onload="startTime()">
-                                  <div id="root" style="margin: auto; height: auto; width: auto; padding-right: 0px; padding-left: 0px;">
-                                    <div class="App">
-                                      <div class="Navbar" style="padding-right: 0px; padding-left: 0px;">
-                                        <div class="navbar-right">
-                                          <span>
+<body onload="startTime()">
+	<div id="root" style="margin: auto; height: auto; width: auto; padding-right: 0px; padding-left: 0px;">
+		<div class="App">
+			<div class="Navbar" style="padding-right: 0px; padding-left: 0px;">
+				<div class="navbar-right"> <span>
                                             <a href="https://github.com/covid19-thane/covid19-thane.github.io/blob/master/README.md">Info</a>
                                           </span>
-                                        </div>
-                                        <div class="navbar-middle">
-                                          <a href="">Covid19
-                                            <span>Thane</span>
+				</div>
+				<div class="navbar-middle"> <a href="">Covid19<span>Thane</span>
                                           </a>
-                                        </div>
-                                        <div class="navbar-left">
-                                          <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input" id="darkSwitch">
-                                              <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                              </svg>
-                                            </div>
-                                            <script src="./js/dark-mode-switch.min.js"></script>
-                                          </div>
-                                        </div>
-                                        <div class="header fadeInUp" style="animation-delay: 1s;">
-                                          <div class="actions">
-                                            <h5>
+				</div>
+				<div class="navbar-left">
+					<div class="custom-control custom-switch">
+						<input type="checkbox" class="custom-control-input" id="darkSwitch">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+						</svg>
+					</div>
+					<script src="./js/dark-mode-switch.min.js"></script>
+				</div>
+			</div>
+			<div class="header fadeInUp" style="animation-delay: 1s;">
+				<div class="actions">
+					<h5>
                                               <span class="notranslate" id="time"></span>
                                               <br>
                                                 <br>Thane District
@@ -124,127 +113,119 @@ p {
 
                         
                                                 </h5>
-                                                <div class="bell-icon">
-                                                  <svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                                                  </svg>
-                                                  <div class="indicator"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="Level">
-                                              <div class="level-item is-cherry fadeInUp" style="animation-delay: 1s;">
-                                                <h5>Confirmed</h5>
-                                                <div class="stat__item confirmedtha">
-                                                  <h1>
+					<div class="bell-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+							<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+						</svg>
+						<div class="indicator"></div>
+					</div>
+				</div>
+			</div>
+			<div class="Level">
+				<div class="level-item is-cherry fadeInUp" style="animation-delay: 1s;">
+					<h5>Confirmed</h5>
+					<div class="stat__item confirmedtha">
+						<h1>
                                                     <span class="number notranslate">🔃</span>
                                                   </h1>
-                                                </div>
-                                              </div>
-                                              <div class="level-item is-blue fadeInUp" style="animation-delay: 1.1s;">
-                                                <h5 class="heading">Active</h5>
-                                                <div class="stat__item activetha">
-                                                  <h1 class="title has-text-info">
+					</div>
+				</div>
+				<div class="level-item is-blue fadeInUp" style="animation-delay: 1.1s;">
+					<h5 class="heading">Active</h5>
+					<div class="stat__item activetha">
+						<h1 class="title has-text-info">
                                                     <span class="number notranslate">🔃</span>
                                                   </h1>
-                                                </div>
-                                              </div>
-                                              <div class="level-item is-green fadeInUp" style="animation-delay: 1.2s;">
-                                                <h5 class="heading">Recovered</h5>
-                                                <div class="stat__item recoveredtha">
-                                                  <h1 class="title has-text-success">
+					</div>
+				</div>
+				<div class="level-item is-green fadeInUp" style="animation-delay: 1.2s;">
+					<h5 class="heading">Recovered</h5>
+					<div class="stat__item recoveredtha">
+						<h1 class="title has-text-success">
                                                     <span class="number notranslate">🔃</span>
                                                   </h1>
-                                                </div>
-                                              </div>
-                                              <div class="level-item is-gray fadeInUp" style="animation-delay: 1.3s;">
-                                                <h5 class="heading">Deaths</h5>
-                                                <div class="stat__item deceasedtha">
-                                                  <h1 class="title has-text-grey">
+					</div>
+				</div>
+				<div class="level-item is-gray fadeInUp" style="animation-delay: 1.3s;">
+					<h5 class="heading">Deaths</h5>
+					<div class="stat__item deceasedtha">
+						<h1 class="title has-text-grey">
                                                     <span class="number notranslate">🔃</span>
                                                   </h1>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="Minigraph">
-                                              <div class="svg-parent fadeInUp" style="animation-delay: 1.4s;">
-                                                <svg width="100" height="75" viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
-                                                  <path fill="none" stroke="#ff073a99" stroke-width="2.5" cursor="pointer" d="M5,31.373090672733184C5,31.373090672733184,8.157894736842104,30.9446430505904,9.736842105263158,30.417614559636007C11.31578947368421,29.890586068681614,12.894736842105262,29.246018849528767,14.473684210526315,28.21091972700683C16.052631578947366,27.17582060448489,17.63157894736842,24.225029790921894,19.210526315789473,24.207019824504385C20.789473684210524,24.189009858086877,22.368421052631575,28.051673708157296,23.94736842105263,28.102859928501786C25.526315789473685,28.154046148846277,27.10526315789474,24.86770122413606,28.68421052631579,24.514137146571333C30.263157894736842,24.160573069006606,31.842105263157894,25.732179612176367,33.421052631578945,25.981475463113426C35,26.230771314050486,36.57894736842105,25.849718340374828,38.1578947368421,26.0099122521937C39.73684210526316,26.170106164012573,41.315789473684205,27.8639909002275,42.89473684210526,26.942638934026654C44.473684210526315,26.02128696782581,46.05263157894737,20.877071823204425,47.631578947368425,20.48180045498863C49.21052631578948,20.086529086772835,50.78947368421053,23.861038890694402,52.36842105263158,24.571010724731885C53.94736842105264,25.280982558769367,55.526315789473685,24.86864911710541,57.10526315789474,24.741631459213522C58.684210526315795,24.614613801321635,60.26315789473684,24.215550861228465,61.8421052631579,23.80890477738056C63.42105263157895,23.40225869353266,65,22.379482179612175,66.57894736842105,22.301754956126096C68.15789473684211,22.224027732640018,69.73684210526315,24.10369949084606,71.3157894736842,23.34254143646409C72.89473684210526,22.581383382082116,74.47368421052632,18.91114180478822,76.05263157894737,17.73480662983426C77.63157894736842,16.5584714548803,79.21052631578947,16.127180153829485,80.78947368421052,16.28453038674033C82.36842105263158,16.441880619651172,83.94736842105263,19.726329758422708,85.52631578947368,18.678908027299318C87.10526315789474,17.63148629617593,88.68421052631578,10.871113638825696,90.26315789473684,10C91.84210526315789,9.128886361174304,95,13.45222619434514,95,13.45222619434514" stroke-dasharray="112.00975799560547 112.00975799560547" stroke-dashoffset="0"></path>
-                                                  <circle fill="#ff073a" stroke="#ff073a" r="2" cursor="pointer" cx="95" cy="13.45222619434514" style="opacity: 1;"></circle>
-                                                </svg>
-                                              </div>
-                                              <div class="svg-parent is-blue fadeInUp" style="animation-delay: 1.5s;">
-                                                <svg width="100" height="75" viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
-                                                  <path fill="none" stroke="#007bff99" stroke-width="2.5" cursor="pointer" d="M5,37.282255443613906C5,37.282255443613906,8.157894736842104,36.18269959917669,9.736842105263158,35.66704582385441C11.31578947368421,35.151392048532124,12.894736842105262,34.97508395623443,14.473684210526315,34.18833279168021C16.052631578947366,33.40158162712599,17.63157894736842,30.61193261835121,19.210526315789473,30.94653883652909C20.789473684210524,31.28114505470697,22.368421052631575,36.08127505145705,23.94736842105263,36.19597010074748C25.526315789473685,36.31066515003791,27.10526315789474,31.840401906619,28.68421052631579,31.634709132271695C30.263157894736842,31.42901635792439,31.842105263157894,34.75422489437765,33.421052631578945,34.96181345466364C35,35.16940201494963,36.57894736842105,32.7674412306359,38.1578947368421,32.88024049398765C39.73684210526316,32.993039757339396,41.315789473684205,36.016818329541756,42.89473684210526,35.63860903477413C44.473684210526315,35.2603997400065,46.05263157894737,30.8820821146138,47.631578947368425,30.61098472538187C49.21052631578948,30.339887336149935,50.78947368421053,33.07076698082549,52.36842105263158,34.01202469938252C53.94736842105264,34.953282417939555,55.526315789473685,35.968475788105295,57.10526315789474,36.25853103672408C58.684210526315795,36.548586285342864,60.26315789473684,36.47559852670351,61.8421052631579,35.75235619109523C63.42105263157895,35.029113855486955,65,31.771205719857004,66.57894736842105,31.919077023074422C68.15789473684211,32.066948326291836,69.73684210526315,35.08693532661683,71.3157894736842,36.63958401039974C72.89473684210526,38.19223269418264,74.47368421052632,42.077645975517285,76.05263157894737,41.23496912577186C77.63157894736842,40.39229227602644,79.21052631578947,32.86602209944751,80.78947368421052,31.5835229119272C82.36842105263158,30.30102372440689,83.94736842105263,34.12482396273427,85.52631578947368,33.539974000649984C87.10526315789474,32.9551240385657,88.68421052631578,28.34646842162279,90.26315789473684,28.074423139421512C91.84210526315789,27.802377857220232,95,31.907702307442314,95,31.907702307442314" stroke-dasharray="119.9140396118164 119.9140396118164" stroke-dashoffset="0"></path>
-                                                  <circle fill="#007bff" stroke="#007bff" r="2" cursor="pointer" cx="95" cy="31.907702307442314" style="opacity: 1;"></circle>
-                                                </svg>
-                                              </div>
-                                              <div class="svg-parent is-green fadeInUp" style="animation-delay: 1.6s;">
-                                                <svg width="100" height="75" viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
-                                                  <path fill="none" stroke="#28a74599" stroke-width="2.5" cursor="pointer" d="M5,39.52876178095548C5,39.52876178095548,8.157894736842104,40.225463113422165,9.736842105263158,40.27380565485863C11.31578947368421,40.32214819629509,12.894736842105262,40.056738164879214,14.473684210526315,39.81881702957426C16.052631578947366,39.58089589426931,17.63157894736842,39.21026974325642,19.210526315789473,38.84627884302893C20.789473684210524,38.482287942801435,22.368421052631575,37.70975517278735,23.94736842105263,37.6348716282093C25.526315789473685,37.55998808363125,27.10526315789474,38.56759831004225,28.68421052631579,38.39697757556061C30.263157894736842,38.226356841078974,31.842105263157894,36.56375257285235,33.421052631578945,36.61114722131947C35,36.65854186978659,36.57894736842105,38.62352399523345,38.1578947368421,38.68134546636334C39.73684210526316,38.73916693749323,41.315789473684205,37.48700032499188,42.89473684210526,36.9580760480988C44.473684210526315,36.429151771205724,46.05263157894737,35.66420214494638,47.631578947368425,35.50779980500488C49.21052631578948,35.35139746506338,50.78947368421053,36.2433647492146,52.36842105263158,36.019662008449785C53.94736842105264,35.79595926768497,55.526315789473685,34.52957426064348,57.10526315789474,34.16558336041599C58.684210526315795,33.801592460188495,60.26315789473684,33.54092189361933,61.8421052631579,33.83571660708483C63.42105263157895,34.130511320550326,65,36.191230635900766,66.57894736842105,35.93435164120897C68.15789473684211,35.677472646517174,69.73684210526315,34.586447838804034,71.3157894736842,32.29444263893403C72.89473684210526,30.00243743906403,74.47368421052632,22.470479904669055,76.05263157894737,22.182320441988956C77.63157894736842,21.894160979308857,79.21052631578947,29.115209619759508,80.78947368421052,30.56548586285343C82.36842105263158,32.01576210594735,83.94736842105263,31.35223702740765,85.52631578947368,30.883977900552487C87.10526315789474,30.415718773697325,88.68421052631578,28.354051565377528,90.26315789473684,27.755931101722453C91.84210526315789,27.157810638067378,95,27.29525511862203,95,27.29525511862203" stroke-dasharray="107.31688690185547 107.31688690185547" stroke-dashoffset="0"></path>
-                                                  <circle fill="#28a745" stroke="#28a745" r="2" cursor="pointer" cx="95" cy="27.29525511862203" style="opacity: 1;"></circle>
-                                                </svg>
-                                              </div>
-                                              <div class="svg-parent is-gray fadeInUp" style="animation-delay: 1.7s;">
-                                                <svg width="100" height="75" viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
-                                                  <path fill="none" stroke="#6c757d99" stroke-width="2.5" cursor="pointer" d="M5,44.562073448163794C5,44.562073448163794,8.157894736842104,44.53648033799155,9.736842105263158,44.47676308092297C11.31578947368421,44.417045823854394,12.894736842105262,44.21419672841512,14.473684210526315,44.20376990575235C16.052631578947366,44.19334308308959,17.63157894736842,44.40282742931427,19.210526315789473,44.41420214494638C20.789473684210524,44.42557686057849,22.368421052631575,44.26064348391291,23.94736842105263,44.272018199545016C25.526315789473685,44.283392915177124,27.10526315789474,44.45970100747481,28.68421052631579,44.48245043873903C30.263157894736842,44.505199870003246,31.842105263157894,44.41420214494637,33.421052631578945,44.40851478713032C35,44.40282742931427,36.57894736842105,44.45875311450547,38.1578947368421,44.448326291842704C39.73684210526316,44.43789946917994,41.315789473684205,44.36017224569385,42.89473684210526,44.345953851153716C44.473684210526315,44.33173545661358,46.05263157894737,44.330787563644236,47.631578947368425,44.36301592460188C49.21052631578948,44.39524428555953,50.78947368421053,44.546907160654314,52.36842105263158,44.53932401689958C53.94736842105264,44.53174087314484,55.526315789473685,44.370599068356626,57.10526315789474,44.31751706207345C58.684210526315795,44.26443505579027,60.26315789473684,44.19903044090565,61.8421052631579,44.220831979200526C63.42105263157895,44.2426335174954,65,44.41704582385441,66.57894736842105,44.448326291842704C68.15789473684211,44.479606759831,69.73684210526315,44.430316325425196,71.3157894736842,44.40851478713032C72.89473684210526,44.38671324883545,74.47368421052632,44.36301592460188,76.05263157894737,44.31751706207345C77.63157894736842,44.272018199545016,79.21052631578947,44.14594843462247,80.78947368421052,44.1355216119597C82.36842105263158,44.12509478929694,83.94736842105263,44.2492687682808,85.52631578947368,44.25495612609685C87.10526315789474,44.2606434839129,88.68421052631578,44.17059365182537,90.26315789473684,44.16964575885603C91.84210526315789,44.168697865886685,95,44.24926876828079,95,44.24926876828079" stroke-dasharray="90.0513916015625 90.0513916015625" stroke-dashoffset="0"></path>
-                                                  <circle fill="#6c757d" stroke="#6c757d" r="2" cursor="pointer" cx="95" cy="44.24926876828079" style="opacity: 1;"></circle>
-                                                </svg>
-                                              </div>
-                                            </div>
-                                            <div class="header fadeInUp" style="animation-delay: 1s;">
-                                              <div class="actions">
-                                                <h5 class="table-fineprint fadeInUp" style="animation-delay: 1.5s;">Compiled from Press Releases.&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="Minigraph">
+				<div class="svg-parent fadeInUp" style="animation-delay: 1.4s;">
+					<svg width="100" height="75" viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
+						<path fill="none" stroke="#ff073a99" stroke-width="2.5" cursor="pointer" d="M5,31.373090672733184C5,31.373090672733184,8.157894736842104,30.9446430505904,9.736842105263158,30.417614559636007C11.31578947368421,29.890586068681614,12.894736842105262,29.246018849528767,14.473684210526315,28.21091972700683C16.052631578947366,27.17582060448489,17.63157894736842,24.225029790921894,19.210526315789473,24.207019824504385C20.789473684210524,24.189009858086877,22.368421052631575,28.051673708157296,23.94736842105263,28.102859928501786C25.526315789473685,28.154046148846277,27.10526315789474,24.86770122413606,28.68421052631579,24.514137146571333C30.263157894736842,24.160573069006606,31.842105263157894,25.732179612176367,33.421052631578945,25.981475463113426C35,26.230771314050486,36.57894736842105,25.849718340374828,38.1578947368421,26.0099122521937C39.73684210526316,26.170106164012573,41.315789473684205,27.8639909002275,42.89473684210526,26.942638934026654C44.473684210526315,26.02128696782581,46.05263157894737,20.877071823204425,47.631578947368425,20.48180045498863C49.21052631578948,20.086529086772835,50.78947368421053,23.861038890694402,52.36842105263158,24.571010724731885C53.94736842105264,25.280982558769367,55.526315789473685,24.86864911710541,57.10526315789474,24.741631459213522C58.684210526315795,24.614613801321635,60.26315789473684,24.215550861228465,61.8421052631579,23.80890477738056C63.42105263157895,23.40225869353266,65,22.379482179612175,66.57894736842105,22.301754956126096C68.15789473684211,22.224027732640018,69.73684210526315,24.10369949084606,71.3157894736842,23.34254143646409C72.89473684210526,22.581383382082116,74.47368421052632,18.91114180478822,76.05263157894737,17.73480662983426C77.63157894736842,16.5584714548803,79.21052631578947,16.127180153829485,80.78947368421052,16.28453038674033C82.36842105263158,16.441880619651172,83.94736842105263,19.726329758422708,85.52631578947368,18.678908027299318C87.10526315789474,17.63148629617593,88.68421052631578,10.871113638825696,90.26315789473684,10C91.84210526315789,9.128886361174304,95,13.45222619434514,95,13.45222619434514" stroke-dasharray="112.00975799560547 112.00975799560547" stroke-dashoffset="0"></path>
+						<circle fill="#ff073a" stroke="#ff073a" r="2" cursor="pointer" cx="95" cy="13.45222619434514" style="opacity: 1;"></circle>
+					</svg>
+				</div>
+				<div class="svg-parent is-blue fadeInUp" style="animation-delay: 1.5s;">
+					<svg width="100" height="75" viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
+						<path fill="none" stroke="#007bff99" stroke-width="2.5" cursor="pointer" d="M5,37.282255443613906C5,37.282255443613906,8.157894736842104,36.18269959917669,9.736842105263158,35.66704582385441C11.31578947368421,35.151392048532124,12.894736842105262,34.97508395623443,14.473684210526315,34.18833279168021C16.052631578947366,33.40158162712599,17.63157894736842,30.61193261835121,19.210526315789473,30.94653883652909C20.789473684210524,31.28114505470697,22.368421052631575,36.08127505145705,23.94736842105263,36.19597010074748C25.526315789473685,36.31066515003791,27.10526315789474,31.840401906619,28.68421052631579,31.634709132271695C30.263157894736842,31.42901635792439,31.842105263157894,34.75422489437765,33.421052631578945,34.96181345466364C35,35.16940201494963,36.57894736842105,32.7674412306359,38.1578947368421,32.88024049398765C39.73684210526316,32.993039757339396,41.315789473684205,36.016818329541756,42.89473684210526,35.63860903477413C44.473684210526315,35.2603997400065,46.05263157894737,30.8820821146138,47.631578947368425,30.61098472538187C49.21052631578948,30.339887336149935,50.78947368421053,33.07076698082549,52.36842105263158,34.01202469938252C53.94736842105264,34.953282417939555,55.526315789473685,35.968475788105295,57.10526315789474,36.25853103672408C58.684210526315795,36.548586285342864,60.26315789473684,36.47559852670351,61.8421052631579,35.75235619109523C63.42105263157895,35.029113855486955,65,31.771205719857004,66.57894736842105,31.919077023074422C68.15789473684211,32.066948326291836,69.73684210526315,35.08693532661683,71.3157894736842,36.63958401039974C72.89473684210526,38.19223269418264,74.47368421052632,42.077645975517285,76.05263157894737,41.23496912577186C77.63157894736842,40.39229227602644,79.21052631578947,32.86602209944751,80.78947368421052,31.5835229119272C82.36842105263158,30.30102372440689,83.94736842105263,34.12482396273427,85.52631578947368,33.539974000649984C87.10526315789474,32.9551240385657,88.68421052631578,28.34646842162279,90.26315789473684,28.074423139421512C91.84210526315789,27.802377857220232,95,31.907702307442314,95,31.907702307442314" stroke-dasharray="119.9140396118164 119.9140396118164" stroke-dashoffset="0"></path>
+						<circle fill="#007bff" stroke="#007bff" r="2" cursor="pointer" cx="95" cy="31.907702307442314" style="opacity: 1;"></circle>
+					</svg>
+				</div>
+				<div class="svg-parent is-green fadeInUp" style="animation-delay: 1.6s;">
+					<svg width="100" height="75" viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
+						<path fill="none" stroke="#28a74599" stroke-width="2.5" cursor="pointer" d="M5,39.52876178095548C5,39.52876178095548,8.157894736842104,40.225463113422165,9.736842105263158,40.27380565485863C11.31578947368421,40.32214819629509,12.894736842105262,40.056738164879214,14.473684210526315,39.81881702957426C16.052631578947366,39.58089589426931,17.63157894736842,39.21026974325642,19.210526315789473,38.84627884302893C20.789473684210524,38.482287942801435,22.368421052631575,37.70975517278735,23.94736842105263,37.6348716282093C25.526315789473685,37.55998808363125,27.10526315789474,38.56759831004225,28.68421052631579,38.39697757556061C30.263157894736842,38.226356841078974,31.842105263157894,36.56375257285235,33.421052631578945,36.61114722131947C35,36.65854186978659,36.57894736842105,38.62352399523345,38.1578947368421,38.68134546636334C39.73684210526316,38.73916693749323,41.315789473684205,37.48700032499188,42.89473684210526,36.9580760480988C44.473684210526315,36.429151771205724,46.05263157894737,35.66420214494638,47.631578947368425,35.50779980500488C49.21052631578948,35.35139746506338,50.78947368421053,36.2433647492146,52.36842105263158,36.019662008449785C53.94736842105264,35.79595926768497,55.526315789473685,34.52957426064348,57.10526315789474,34.16558336041599C58.684210526315795,33.801592460188495,60.26315789473684,33.54092189361933,61.8421052631579,33.83571660708483C63.42105263157895,34.130511320550326,65,36.191230635900766,66.57894736842105,35.93435164120897C68.15789473684211,35.677472646517174,69.73684210526315,34.586447838804034,71.3157894736842,32.29444263893403C72.89473684210526,30.00243743906403,74.47368421052632,22.470479904669055,76.05263157894737,22.182320441988956C77.63157894736842,21.894160979308857,79.21052631578947,29.115209619759508,80.78947368421052,30.56548586285343C82.36842105263158,32.01576210594735,83.94736842105263,31.35223702740765,85.52631578947368,30.883977900552487C87.10526315789474,30.415718773697325,88.68421052631578,28.354051565377528,90.26315789473684,27.755931101722453C91.84210526315789,27.157810638067378,95,27.29525511862203,95,27.29525511862203" stroke-dasharray="107.31688690185547 107.31688690185547" stroke-dashoffset="0"></path>
+						<circle fill="#28a745" stroke="#28a745" r="2" cursor="pointer" cx="95" cy="27.29525511862203" style="opacity: 1;"></circle>
+					</svg>
+				</div>
+				<div class="svg-parent is-gray fadeInUp" style="animation-delay: 1.7s;">
+					<svg width="100" height="75" viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
+						<path fill="none" stroke="#6c757d99" stroke-width="2.5" cursor="pointer" d="M5,44.562073448163794C5,44.562073448163794,8.157894736842104,44.53648033799155,9.736842105263158,44.47676308092297C11.31578947368421,44.417045823854394,12.894736842105262,44.21419672841512,14.473684210526315,44.20376990575235C16.052631578947366,44.19334308308959,17.63157894736842,44.40282742931427,19.210526315789473,44.41420214494638C20.789473684210524,44.42557686057849,22.368421052631575,44.26064348391291,23.94736842105263,44.272018199545016C25.526315789473685,44.283392915177124,27.10526315789474,44.45970100747481,28.68421052631579,44.48245043873903C30.263157894736842,44.505199870003246,31.842105263157894,44.41420214494637,33.421052631578945,44.40851478713032C35,44.40282742931427,36.57894736842105,44.45875311450547,38.1578947368421,44.448326291842704C39.73684210526316,44.43789946917994,41.315789473684205,44.36017224569385,42.89473684210526,44.345953851153716C44.473684210526315,44.33173545661358,46.05263157894737,44.330787563644236,47.631578947368425,44.36301592460188C49.21052631578948,44.39524428555953,50.78947368421053,44.546907160654314,52.36842105263158,44.53932401689958C53.94736842105264,44.53174087314484,55.526315789473685,44.370599068356626,57.10526315789474,44.31751706207345C58.684210526315795,44.26443505579027,60.26315789473684,44.19903044090565,61.8421052631579,44.220831979200526C63.42105263157895,44.2426335174954,65,44.41704582385441,66.57894736842105,44.448326291842704C68.15789473684211,44.479606759831,69.73684210526315,44.430316325425196,71.3157894736842,44.40851478713032C72.89473684210526,44.38671324883545,74.47368421052632,44.36301592460188,76.05263157894737,44.31751706207345C77.63157894736842,44.272018199545016,79.21052631578947,44.14594843462247,80.78947368421052,44.1355216119597C82.36842105263158,44.12509478929694,83.94736842105263,44.2492687682808,85.52631578947368,44.25495612609685C87.10526315789474,44.2606434839129,88.68421052631578,44.17059365182537,90.26315789473684,44.16964575885603C91.84210526315789,44.168697865886685,95,44.24926876828079,95,44.24926876828079" stroke-dasharray="90.0513916015625 90.0513916015625" stroke-dashoffset="0"></path>
+						<circle fill="#6c757d" stroke="#6c757d" r="2" cursor="pointer" cx="95" cy="44.24926876828079" style="opacity: 1;"></circle>
+					</svg>
+				</div>
+			</div>
+			<div class="header fadeInUp" style="animation-delay: 1s;">
+				<div class="actions">
+					<h5 class="table-fineprint fadeInUp" style="animation-delay: 1.5s;">Compiled from Press Releases.&nbsp;
                                                   <a href="https://www.google.com/search?q=press+release&oq=press+release" style="color: rgb(108, 117, 125);">know more!</a>
                                                 </h5>
-                                              </div>
-                                            </div>
-                                            <center>
-                                              <table class="table fadeInUp" align="center" style="table-layout: fixed; margin: auto;height: auto; width: auto; animation-delay: 1.8s; padding-right: 0px; padding-left: 0px;">
-                                                <thead>
-                                                  <tr>
-                                                    <th class="state-heading">
-                                                      <div class="heading-content">
-                                                        <abbr title="State">City</abbr>
-                                                        <div style="display: initial;">
-                                                          <div class="arrow-down"></div>
-                                                        </div>
-                                                      </div>
-                                                    </th>
-                                                    <th>
-                                                      <div class="heading-content">
-                                                        <abbr class="is-confirmed" title="confirmed">C</abbr>
-                                                      </div>
-                                                    </th>
-                                                    <th>
-                                                      <div class="heading-content">
-                                                        <abbr class="is-active" title="active">A</abbr>
-                                                      </div>
-                                                    </th>
-                                                    <th>
-                                                      <div class="heading-content">
-                                                        <abbr class="is-recovered" title="recovered">R</abbr>
-                                                      </div>
-                                                    </th>
-                                                    <th>
-                                                      <div class="heading-content">
-                                                        <abbr class="is-deaths" title="deaths">D</abbr>
-                                                      </div>
-                                                    </th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <td>
-                                                      <div class="title-chevron">
-                                                        <span class="title-icon">Ambarnath</span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item confirmedamb">
-                                                        <span class="delta is-confirmed">
+				</div>
+			</div>
+			<center>
+				<table class="table fadeInUp" align="center" style="table-layout: fixed; margin: auto;height: auto; width: auto; animation-delay: 1.8s; padding-right: 0px; padding-left: 0px;">
+					<thead>
+						<tr>
+							<th class="state-heading">
+								<div class="heading-content"> <abbr title="State">City</abbr>
+									<div style="display: initial;">
+										<div class="arrow-down"></div>
+									</div>
+								</div>
+							</th>
+							<th>
+								<div class="heading-content"> <abbr class="is-confirmed" title="confirmed">C</abbr>
+								</div>
+							</th>
+							<th>
+								<div class="heading-content"> <abbr class="is-active" title="active">A</abbr>
+								</div>
+							</th>
+							<th>
+								<div class="heading-content"> <abbr class="is-recovered" title="recovered">R</abbr>
+								</div>
+							</th>
+							<th>
+								<div class="heading-content"> <abbr class="is-deaths" title="deaths">D</abbr>
+								</div>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="title-chevron"> <span class="title-icon">Ambarnath</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item confirmedamb"> <span class="delta is-confirmed">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -252,21 +233,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item activeamb">
-                                                        <span class="delta is-active">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item activeamb"> <span class="delta is-active">
                                                           <span class="number notranslate">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item recoveredamb">
-                                                        <span class="delta is-recovered">
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item recoveredamb"> <span class="delta is-recovered">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -274,14 +252,12 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item deceasedamb">
-                                                        <span class="delta is-deaths">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item deceasedamb"> <span class="delta is-deaths">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -289,21 +265,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <div class="title-chevron">
-                                                        <span class="title-icon">Badlapur</span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item confirmedbad">
-                                                        <span class="delta is-confirmed">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title-chevron"> <span class="title-icon">Badlapur</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item confirmedbad"> <span class="delta is-confirmed">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -311,21 +284,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item activebad">
-                                                        <span class="delta is-active">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item activebad"> <span class="delta is-active">
                                                           <span class="number notranslate">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item recoveredbad">
-                                                        <span class="delta is-recovered">
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item recoveredbad"> <span class="delta is-recovered">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -333,14 +303,12 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item deceasedbad">
-                                                        <span class="delta is-deaths">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item deceasedbad"> <span class="delta is-deaths">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -348,21 +316,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <div class="title-chevron">
-                                                        <span class="title-icon">Bhiwandi (C+R)</span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item confirmedbhi">
-                                                        <span class="delta is-confirmed">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title-chevron"> <span class="title-icon">Bhiwandi (C+R)</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item confirmedbhi"> <span class="delta is-confirmed">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -370,21 +335,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item activebhi">
-                                                        <span class="delta is-active">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item activebhi"> <span class="delta is-active">
                                                           <span class="number notranslate">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item recoveredbhi">
-                                                        <span class="delta is-recovered">
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item recoveredbhi"> <span class="delta is-recovered">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -392,14 +354,12 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item deceasedbhi">
-                                                        <span class="delta is-deaths">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item deceasedbhi"> <span class="delta is-deaths">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -407,21 +367,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <div class="title-chevron">
-                                                        <span class="title-icon">KDMC</span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item confirmedkal">
-                                                        <span class="delta is-confirmed">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title-chevron"> <span class="title-icon">KDMC</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item confirmedkal"> <span class="delta is-confirmed">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -429,21 +386,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item activekal">
-                                                        <span class="delta is-active">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item activekal"> <span class="delta is-active">
                                                           <span class="number notranslate">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item recoveredkal">
-                                                        <span class="delta is-recovered">
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item recoveredkal"> <span class="delta is-recovered">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -451,14 +405,12 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item deceasedkal">
-                                                        <span class="delta is-deaths">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item deceasedkal"> <span class="delta is-deaths">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -466,21 +418,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <div class="title-chevron">
-                                                        <span class="title-icon">Mira Bhaindar</span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item confirmedmb">
-                                                        <span class="delta is-confirmed">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title-chevron"> <span class="title-icon">Mira Bhaindar</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item confirmedmb"> <span class="delta is-confirmed">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -488,21 +437,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item activemb">
-                                                        <span class="delta is-active">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item activemb"> <span class="delta is-active">
                                                           <span class="number notranslate">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item recoveredmb">
-                                                        <span class="delta is-recovered">
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item recoveredmb"> <span class="delta is-recovered">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -510,14 +456,12 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item deceasedmb">
-                                                        <span class="delta is-deaths">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item deceasedmb"> <span class="delta is-deaths">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -525,21 +469,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <div class="title-chevron">
-                                                        <span class="title-icon">Navi Mumbai</span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item confirmednm">
-                                                        <span class="delta is-confirmed">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title-chevron"> <span class="title-icon">Navi Mumbai</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item confirmednm"> <span class="delta is-confirmed">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -547,21 +488,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item activenm">
-                                                        <span class="delta is-active">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item activenm"> <span class="delta is-active">
                                                           <span class="number notranslate">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item recoverednm">
-                                                        <span class="delta is-recovered">
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item recoverednm"> <span class="delta is-recovered">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -569,14 +507,12 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item deceasednm">
-                                                        <span class="delta is-deaths">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item deceasednm"> <span class="delta is-deaths">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -584,21 +520,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <div class="title-chevron">
-                                                        <span class="title-icon">Thane</span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item confirmedthane">
-                                                        <span class="delta is-confirmed">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title-chevron"> <span class="title-icon">Thane</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item confirmedthane"> <span class="delta is-confirmed">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -606,21 +539,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item activethane">
-                                                        <span class="delta is-active">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item activethane"> <span class="delta is-active">
                                                           <span class="number notranslate">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item recoveredthane">
-                                                        <span class="delta is-recovered">
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item recoveredthane"> <span class="delta is-recovered">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -628,14 +558,12 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item deceasedthane">
-                                                        <span class="delta is-deaths">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item deceasedthane"> <span class="delta is-deaths">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -643,21 +571,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <div class="title-chevron">
-                                                        <span class="title-icon">Ulhasnagar</span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item confirmedul">
-                                                        <span class="delta is-confirmed">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title-chevron"> <span class="title-icon">Ulhasnagar</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item confirmedul"> <span class="delta is-confirmed">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -665,21 +590,18 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item activeul">
-                                                        <span class="delta is-active">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item activeul"> <span class="delta is-active">
                                                           <span class="number notranslate">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item recoveredul">
-                                                        <span class="delta is-recovered">
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item recoveredul"> <span class="delta is-recovered">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -687,14 +609,12 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                    <td>
-                                                      <div class="stat__item deceasedul">
-                                                        <span class="delta is-deaths">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+							<td>
+								<div class="stat__item deceasedul"> <span class="delta is-deaths">
                                                           <sup>
                                                             <svg
                                                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -702,27 +622,26 @@ p {
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
                                                             <span class="new"></span>
-                                                          </sup>&nbsp; 
-                                                          <span class="number notranslate" style="color:#616161">🔃</span>
-                                                        </span>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                                <tr class="state-last-update">
-                                                  <td colspan="3" style="padding-bottom: 0px;">
-                                                    <p class="spacer"></p>
-                                                    <p>Updated Everyday after 9:00 p.m.</p>
-                                                  </td>
-                                                  <td colspan="3" style="padding-bottom: 0px;">
-                                                    <p class="spacer"></p>
-                                                    <p id="date"></p>
-                                                  </td>
-                                                </tr>
-                                              </table>
-                                            </center>
-                                            <div class="header fadeInUp" style="animation-delay: 2s;">
-                                              <h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">
+									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+					<tr class="state-last-update">
+						<td colspan="3" style="padding-bottom: 0px;">
+							<p class="spacer"></p>
+							<p>Updated Everyday after 9:00 p.m.</p>
+						</td>
+						<td colspan="3" style="padding-bottom: 0px;">
+							<p class="spacer"></p>
+							<p id="date"></p>
+						</td>
+					</tr>
+				</table>
+			</center>
+			<div class="header fadeInUp" style="animation-delay: 2s;">
+				<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">
                                                 <b>Change Language:</b>&nbsp;
 								
                                                 <a href="#googtrans(en|hi)" class="lang-es lang-select" data-lang="ja">#Hindi</a>&nbsp;
@@ -731,18 +650,18 @@ p {
 				
                                                 <a href="#googtrans(en|en)" class="lang-es lang-select" data-lang="ja">#English</a>
                                               </h5>
-                                              <h5>
+				<h5>
                                                 <marquee behavior="alternate" style="color: red;">
                                                   <a href="https://www.mygov.in/aarogya-setu-app">👉 Download Aarogya Setu App 👈</a>
                                                 </marquee>
                                               </h5>
-                                              <h5>
+				<h5>
                                                 <marquee behavior="scroll" direction="up" scrollamount="1">👆 Scroll Up For Detailed Report on the Cases Below! 👇</marquee>
                                               </h5>
-                                              <h1 class="text">
+				<h1 class="text">
 Social Distancing
 </h1>
-                                              <h2>
+				<h2>
                                                 <p>
 Help prevent the spread of Coronavirus 
                                                   <i class="fas fa-virus"></i> by
@@ -750,36 +669,35 @@ maintaining at least 1m (3ft) between you and others.
 					
                                                 </p>
                                               </h2>
-                                              <div class="icons">
-                                                <span class="advice">
+				<div class="icons"> <span class="advice">
                                                   <i class="fas fa-handshake-alt-slash"></i>
                                                   <h3>Avoid physical contact</h3>
                                                 </span>
-                                                <span class="advice">
+					<span class="advice">
                                                   <i class="fas fa-hands-wash"></i>
                                                   <h3>Wash your hands</h3>
                                                 </span>
-                                                <span class="advice">
+					<span class="advice">
                                                   <i class="fas fa-head-side-mask"></i>
                                                   <h3>Use mask</h3>
                                                 </span>
-                                              </div>
-                                              <div class="actions">
-                                                <h5 class="table-fineprint fadeInUp" style="animation-delay: 2s;">Official Sites</h5>
-                                              </div>
-                                              <div class="pills fadeInUp" class="header fadeInUp" style="animation-delay: 2s;">
-                                                <button type="button" onclick="window.location.href='http://ambarnathcouncil.net/';">Ambarnath</button>
-                                                <button type="button" onclick="window.location.href='https://kbmc.gov.in/';">Badlapur</button>
-                                                <button type="button" onclick="window.location.href='http://www.umc.gov.in/';">Ulhasnagar</button>
-                                              </div>
-                                              <div class="pills fadeInUp" class="header fadeInUp" style="animation-delay: 2s;">
-                                                <button type="button" onclick="window.location.href='https://www.kdmc.gov.in/';">KDMC</button>
-                                                <button type="button" onclick="window.location.href='https://www.mbmc.gov.in/';">MBMC</button>
-                                                <button type="button" onclick="window.location.href='https://www.nmmc.gov.in/';">NMMC</button>
-                                                <button type="button" onclick="window.location.href='https://thanecity.gov.in/';">Thane</button>
-                                              </div>
-                                              <br>
-                                                <h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👪 Visitors:&nbsp;
+				</div>
+				<div class="actions">
+					<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s;">Official Sites</h5>
+				</div>
+				<div class="pills fadeInUp" class="header fadeInUp" style="animation-delay: 2s;">
+					<button type="button" onclick="window.location.href='http://ambarnathcouncil.net/';">Ambarnath</button>
+					<button type="button" onclick="window.location.href='https://kbmc.gov.in/';">Badlapur</button>
+					<button type="button" onclick="window.location.href='http://www.umc.gov.in/';">Ulhasnagar</button>
+				</div>
+				<div class="pills fadeInUp" class="header fadeInUp" style="animation-delay: 2s;">
+					<button type="button" onclick="window.location.href='https://www.kdmc.gov.in/';">KDMC</button>
+					<button type="button" onclick="window.location.href='https://www.mbmc.gov.in/';">MBMC</button>
+					<button type="button" onclick="window.location.href='https://www.nmmc.gov.in/';">NMMC</button>
+					<button type="button" onclick="window.location.href='https://thanecity.gov.in/';">Thane</button>
+				</div>
+				<br>
+				<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👪 Visitors:&nbsp;
                                                   <a>
                                                     <img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7349627&style=0007&nbdigits=8&type=ip&initCount=0" title="Visitors" Alt="Visitors" border="0">
                                                     </a>
@@ -788,15 +706,13 @@ maintaining at least 1m (3ft) between you and others.
                                                         <img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7351848&style=0007&nbdigits=8&type=page&initCount=287" title="Web Counter" Alt="Web Counter" border="0">
                                                         </a>
                                                       </h5>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <footer class="fadeInUp" style="animation-delay: 2s;">
-                                                  <h5>#StayHome #StaySafe</h5>
-                                                  <div class="link">
-                                                    <a href="https://covid19-thane.github.io/hospitals" target="_blank" rel="noopener noreferrer">covid19thane hospitals</a>
-                                                  </div>
-                                                  <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
+			</div>
+		</div>
+	</div>
+	<footer class="fadeInUp" style="animation-delay: 2s;">
+		<h5>#StayHome #StaySafe</h5>
+		<div class="link"> <a href="https://covid19-thane.github.io/hospitals" target="_blank" rel="noopener noreferrer">covid19thane hospitals</a>
+		</div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
         &nbsp;&nbsp;
 
         
@@ -813,50 +729,47 @@ maintaining at least 1m (3ft) between you and others.
                                                     <span>Share it on Whatsapp&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
                                                   </a>
-                                                  <a href="https://t.me/covid19thane" class="button telegram" target="_blank" rel="noopener noreferrer">
-                                                    <svg
-                                                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                                                    </svg>
-                                                    <span>Telegram</span>
-                                                  </a>
-                                                  <br />
-                                                  <div style="height: auto; width: auto;">
-                                                    <a class="twitter-timeline" href="https://twitter.com/Covid19Thane?ref_src=twsrc%5Etfw">Tweets by Covid19Thane</a>
-                                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                                  </div>
-                                                </footer>
-                                                <script>
-            function startTime() {
-              var today = new Date();
-              var h = today.getHours();
-              var m = today.getMinutes();
-              var s = today.getSeconds();
-              m = checkTime(m);
-              s = checkTime(s);
-              document.getElementById('time').innerHTML =
-              h + ":" + m + ":" + s;
-              document.getElementById('time').innerHTML=today;
-              var t = setTimeout(startTime, 500);
-            }
-            function checkTime(i) {
-              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-              return i;
-            }
-        
-                                                </script>
-                                                <script>
-	window.onclick = function () {
-  document.querySelector(".text").classList.add("spaced");
-
-  const steps = document.querySelectorAll(".advice");
-  var count = 0;
-  setInterval(() => {
-    steps[count].style.display = "block";
-    steps[count].style.opacity = "1.0";
-  }, 3000);
-};</script>
-                                                <script type="text/javascript">
+		<a href="https://t.me/covid19thane" class="button telegram" target="_blank" rel="noopener noreferrer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+			</svg> <span>Telegram</span>
+		</a>
+		<br />
+		<div style="height: auto; width: auto;"> <a class="twitter-timeline" href="https://twitter.com/Covid19Thane?ref_src=twsrc%5Etfw">Tweets by Covid19Thane</a>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+	</footer>
+	<script>
+		function startTime() {
+		              var today = new Date();
+		              var h = today.getHours();
+		              var m = today.getMinutes();
+		              var s = today.getSeconds();
+		              m = checkTime(m);
+		              s = checkTime(s);
+		              document.getElementById('time').innerHTML =
+		              h + ":" + m + ":" + s;
+		              document.getElementById('time').innerHTML=today;
+		              var t = setTimeout(startTime, 500);
+		            }
+		            function checkTime(i) {
+		              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		              return i;
+		            }
+	</script>
+	<script>
+		window.onclick = function () {
+	  document.querySelector(".text").classList.add("spaced");
+	
+	  const steps = document.querySelectorAll(".advice");
+	  var count = 0;
+	  setInterval(() => {
+	    steps[count].style.display = "block";
+	    steps[count].style.opacity = "1.0";
+	  }, 3000);
+	};
+	</script>
+	<script type="text/javascript">
 		function googleTranslateElementInit() {
 		      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
 		    }
@@ -884,22 +797,22 @@ maintaining at least 1m (3ft) between you and others.
 		
 			});
 	</script>
-                                                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                                                <script>
+	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script>
 		n = new Date();
 		y = n.getFullYear();
 		m = n.getMonth() + 1;
 		d = n.getDate();
 		document.getElementById("date").innerHTML = "Up to" + " " + d + "/" + m + "/" + y;
 	</script>
-                                                <script>
+	<script>
 		$(function(){
 		            		$('table').tablesorter({
 		            		});
 		            	});
 	</script>
-                                                <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-                                                <script>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script>
 		var OneSignal = window.OneSignal || [];
 		              OneSignal.push(function() {
 		                OneSignal.init({
@@ -907,14 +820,15 @@ maintaining at least 1m (3ft) between you and others.
 		                });
 		              });
 	</script>
-                                                <script src="./js/bad.js"></script>
-                                                <script src="./js/kal.js"></script>
-                                                <script src="./js/thane.js"></script>
-                                                <script src="./js/bhi.js"></script>
-                                                <script src="./js/thanecity.js"></script>
-                                                <script src="./js/ul.js"></script>
-                                                <script src="./js/amb.js"></script>
-                                                <script src="./js/nm.js"></script>
-                                                <script src="./js/mira.js"></script>
-                                              </body>
-                                            </html>
+	<script src="./js/bad.js"></script>
+	<script src="./js/kal.js"></script>
+	<script src="./js/thane.js"></script>
+	<script src="./js/bhi.js"></script>
+	<script src="./js/thanecity.js"></script>
+	<script src="./js/ul.js"></script>
+	<script src="./js/amb.js"></script>
+	<script src="./js/nm.js"></script>
+	<script src="./js/mira.js"></script>
+</body>
+
+</html>
