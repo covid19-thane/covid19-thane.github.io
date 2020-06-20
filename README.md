@@ -98,6 +98,15 @@ Thane
 -----
 https://essentials.thanecity.gov.in/
 
+Ulhasnagar
+-----
+UMC Covid19 Dashboard
+http://covid.umcgov.in/dashboard2.aspx
+
+UMC Covid19 Public GIS Dashboard
+
+https://arcg.is/rPOTq
+
 # FAQ
 
 Are you official?
@@ -112,12 +121,12 @@ https://instagram.com/Covid19Thane
 
 https://twitter.com/Covid19Thane
 
-https://t.me/Covid19Thane
+https://t.me/Covid19Thane Join For discussion!
 
 # Team
 [Rushi Ranpise](https://t.me/rushiranpise)
 
-[Saurabh Patil](https://twitter.com/iSaurabh28)
+[Saurabh Patil](https://twitter.com/iSaurabh28) Navi Mumbai Data
 
 
  #StayHome #StaySafe
