@@ -809,12 +809,6 @@ maintaining at least 1m (3ft) between you and others.
 		d = n.getDate();
 		document.getElementById("date").innerHTML = "Up to" + " " + d + "/" + m + "/" + y;
 	</script>
-	<script>
-		$(function(){
-		            		$('table').tablesorter({
-		            		});
-		            	});
-	</script>
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 	<script>
 		var OneSignal = window.OneSignal || [];
@@ -840,7 +834,7 @@ jQuery(document).ready(function () {
         openFancybox(); // first page load, launch fancybox
     }
     jQuery.cookie('visited', 'yes', {
-        expires: 1 // the number of days cookie  will be effective
+        expires: 0 // the number of days cookie  will be effective
     });
     jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
 });
