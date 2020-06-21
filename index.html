@@ -53,7 +53,6 @@
 		}
 		
 		.icons {
-		  margin-top: 2rem;
 		  display: flex;
 		  flex-wrap: wrap;
 		  justify-content: space-around;
@@ -71,7 +70,7 @@
 		
 		@keyframes anim {
 		  to {
-		    padding: 16px;
+		    padding: 2px;
 		  }
 		}
 		@media screen and (max-width: 420px) {
@@ -825,7 +824,6 @@ maintaining at least 1m (3ft) between you and others.
 		                });
 		              });
 	</script>
-		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script><script>
 jQuery(document).ready(function () {
@@ -841,7 +839,7 @@ jQuery(document).ready(function () {
         openFancybox(); // first page load, launch fancybox
     }
     jQuery.cookie('visited', 'yes', {
-        expires: 365 // the number of days cookie  will be effective
+        expires: 1 // the number of days cookie  will be effective
     });
     jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
 });
