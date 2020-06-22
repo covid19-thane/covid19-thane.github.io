@@ -18,7 +18,7 @@ No :)
 2.New Cases are shown Zero!
 -
 Yes, while the data is being updated, dashboard shows 0 new cases!
-So please visit back after some times. Usually due to delayed press report.
+So please visit back after some time. Usually it is due to delayed press reports.
 
 3.Are the Numbers on the Dashboard Real or Fake?
 -
@@ -76,19 +76,19 @@ Ulhasnagar (UMC) :-
 
 # Some Unofficial Dashboards :-
 
-[India](https://www.covid19india.org/)
+[For India](https://www.covid19india.org/)
 
 [For Bhiwandi](https://bhiwandi.xyz/)
 
-[Navi Mumbai](https://navimumbai.city/)
+[For Navi Mumbai](https://navimumbai.city/)
 
-[Good Alternative](https://www.cotracker.in/)
+[For Most Mumbai Regions](https://www.cotracker.in/)
 
 # Special Thanks to Following Projects :-
 
 [Coders-Of-XDA-OT](https://github.com/Coders-Of-XDA-OT/)
 
-[covid19india](https://github.com/covid19india/)
+[Covid19india](https://github.com/covid19india/)
 
 # Special Thanks to Twitter Users :-
 
