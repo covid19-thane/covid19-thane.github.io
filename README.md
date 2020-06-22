@@ -6,127 +6,105 @@
 </div>
 
 # Corona Virus Situation in Thane District, India.
-An unoffical Covid-19 Dashboard  for 
-Ambarnath,Badlapur,Bhiwandi,Kalyan (KDMC),Mira Bhayandar,Navi Mumbai,Thane District,Ulhasnagar
 
-Currenlty,
-only data's for Thane Disrtict is auto updated!
-
-Rest, 
-data for Ambarnath , Badlapur , Ulhasnagar , Kalyan & Dombivli (KDMC) , Mira Bhayandar , Navi Mumbai , Thane City are manually updated based on Press Releases.
-
-# Special Thanks
-
-Inspired by
-
-https://github.com/covid19india/covid19india-react
-
-https://github.com/Coders-Of-XDA-OT/coronaSafety
-
-# Twitter Source
-
-https://twitter.com/pphantom2804
-
-https://twitter.com/Mibadlapurkar
-
-https://twitter.com/FullyAmbernath
-
-https://twitter.com/lavinak20
-
-https://twitter.com/DhirajRMishra21
-
-https://twitter.com/NMMConline
-
-https://twitter.com/DigiThane
-
-https://twitter.com/KDMCOfficial
-
-https://twitter.com/badlapurcity
-
-https://twitter.com/rais_shk
-
-
-# Official Sites
-
-(Thane City)
-https://thanecity.gov.in/
-
-(Kalyan & Dombivli (KDMC))
-https://www.kdmc.gov.in/
-
-(Navi Mumbai)
-https://www.nmmc.gov.in/
-
-(Mira Bhayandar)
-https://www.mbmc.gov.in/
-
-(Ulhasnagar)
-https://umc.gov.in/
-
-(Bhiwandi)
-https://bncmc.gov.in/
-
-(Badlapur)
-https://kbmc.gov.in/
-
-(Ambarnath)
-http://ambarnathcouncil.net/
-
-# Official Dashboards
-
-Vasai Virar
--
-https://vvcmc.in/vvmc/corona/local_host/index.html
-
-BMC
-----
-https://stopcoronavirus.mcgm.gov.in/
-
-Panvel
---
-http://panvelcovidcare.cdaat.in/
-
-NMMC
-----
-http://nmmccovid19.in/
-
-KDMC
-----
-https://kdmc-coronavirus-response-skdcl.hub.arcgis.com/
-
-Thane
------
-https://essentials.thanecity.gov.in/
-
-Ulhasnagar
------
-UMC Covid19 Dashboard
-http://covid.umcgov.in/dashboard2.aspx
-
-UMC Covid19 Public GIS Dashboard
-
-https://arcg.is/rPOTq
+This is An unoffical Covid-19 Dashboard  for Ambarnath (AMC) , Badlapur (KBMC) , Bhiwandi , Kalyan & Dombivli (KDMC) , Mira Bhayandar (MBMC) , Navi Mumbai (NMMC) ,Thane (TMC) , Ulhasnagar (UMC).
 
 # FAQ
 
-Are you official?
+1.Are you official?
 -----------------
-No, Not at all :)
+No :)
+
+2.New Cases are shown Zero!
+-
+Yes, while the data is being updated, dashboard shows 0 new cases!
+So please visit back after some times. Usually due to delayed press report.
+
+3.Are the Numbers on the Dashboard Real or Fake?
+-
+The Numbers are 100% real, as they are compiled from Press Reports of respected Municipal Corporations.
+
+4.When is the Dashboard Updated Fully?
+-
+Mostly till 9pm, But due to delay in press reports it may vary.
+
+5.Where Can i get detalied Report on Cases?
+-
+[Here](https://covid19-thane.github.io/#source)
+
+6.The dashboard is showing wrong numbers!
+-
+Contact me to fix it :)
+
+# Municipal Corporation Sites :-
+
+[Ambarnath (AMC)](https://ambarnathcouncil.net/)
+
+[Badlapur (KBMC)](https://kbmc.gov.in/)
+
+[Bhiwandi](https://bncmc.gov.in/)
+
+[Kalyan & Dombivli (KDMC)](https://www.kdmc.gov.in/)
+
+[Mira Bhayandar (MBMC)](https://www.mbmc.gov.in/)
+
+[Navi Mumbai (NMMC)](https://www.nmmc.gov.in/)
+
+[Thane (TMC)](https://thanecity.gov.in/)
+
+[Ulhasnagar (UMC)](https://umc.gov.in/)
+
+# Official Dashboards of Municipal Corporations :-
+
+[Kalyan & Dombivli (KDMC)](https://kdmc-coronavirus-response-skdcl.hub.arcgis.com/)
+
+[Mumbai (BMC)](https://stopcoronavirus.mcgm.gov.in/)
+
+[Navi Mumbai (NMMC)](http://nmmccovid19.in/)
+
+[Panvel](http://panvelcovidcare.cdaat.in/)
+
+[Thane (TMC)](https://essentials.thanecity.gov.in/)
+
+Ulhasnagar (UMC) :-
+
+[Dashboard 1](http://covid.umcgov.in/dashboard2.aspx)
+
+[Dashboard 2](https://arcg.is/rPOTq)
+
+[Vasai Virar](https://vvcmc.in/vvmc/corona/local_host/index.html)
+
+# Some Unofficial Dashboards :-
+
+[India](https://www.covid19india.org/)
+
+[For Bhiwandi](https://bhiwandi.xyz/)
+
+[Navi Mumbai](https://navimumbai.city/)
+
+[Good Alternative](https://www.cotracker.in/)
+
+# Special Thanks to Following Projects :-
+
+[Coders-Of-XDA-OT](https://github.com/Coders-Of-XDA-OT/)
+
+[covid19india](https://github.com/covid19india/)
+
+# Special Thanks to Twitter Users :-
+
+[Following Twitter Users](https://twitter.com/Covid19Thane/following)
 
 # Social
 
-https://covid19-thane.github.io
+[Dashboard](https://covid19-thane.github.io)
 
-https://instagram.com/Covid19Thane
+[Hospitals](https://covid19-thane.github.io/hospitals)
 
-https://twitter.com/Covid19Thane
+[Instagram](https://instagram.com/Covid19Thane)
 
-https://t.me/Covid19Thane Join For discussion!
+[Twitter](https://twitter.com/Covid19Thane)
 
-# Team
+[Telegram](https://t.me/Covid19Thane) Join Group For discussion!
+
+# Contact Me
 [Rushi Ranpise](https://t.me/rushiranpise)
-
-[Saurabh Patil](https://twitter.com/iSaurabh28) Navi Mumbai Data
-
-
- #StayHome #StaySafe
