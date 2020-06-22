@@ -29,16 +29,41 @@
 	<link rel="preload" importance="low" href="/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" importance="low" href="/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<style>
-		@font-face{font-family:Archia;src:url(/fonts/Archia/archia-semibold-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-semibold-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-semibold-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-semibold-webfont.woff) format('woff'),url(/fonts/Archia/archia-semibold-webfont.ttf) format('truetype');font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:Archia;src:url(/fonts/Archia/archia-medium-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-medium-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-medium-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-medium-webfont.woff) format('woff'),url(/fonts/Archia/archia-medium-webfont.ttf) format('truetype');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Archia;src:url(/fonts/Archia/archia-bold-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-bold-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-bold-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-bold-webfont.woff) format('woff'),url(/fonts/Archia/archia-bold-webfont.ttf) format('truetype');font-weight:900;font-style:normal;font-display:swap}
+	@font-face {
+		font-family: Archia;
+		src: url(/fonts/Archia/archia-semibold-webfont.eot);
+		src: local('Archia'), url(/fonts/Archia/archia-semibold-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-semibold-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-semibold-webfont.woff) format('woff'), url(/fonts/Archia/archia-semibold-webfont.ttf) format('truetype');
+		font-weight: 600;
+		font-style: normal;
+		font-display: swap
+	}
+	
+	@font-face {
+		font-family: Archia;
+		src: url(/fonts/Archia/archia-medium-webfont.eot);
+		src: local('Archia'), url(/fonts/Archia/archia-medium-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-medium-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-medium-webfont.woff) format('woff'), url(/fonts/Archia/archia-medium-webfont.ttf) format('truetype');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap
+	}
+	
+	@font-face {
+		font-family: Archia;
+		src: url(/fonts/Archia/archia-bold-webfont.eot);
+		src: local('Archia'), url(/fonts/Archia/archia-bold-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-bold-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-bold-webfont.woff) format('woff'), url(/fonts/Archia/archia-bold-webfont.ttf) format('truetype');
+		font-weight: 900;
+		font-style: normal;
+		font-display: swap
+	}
 	</style>
 	<link href="./styles/main.9022bc6f.chunk.css" rel="stylesheet">
 	<script src="./js/jquery-1.2.6.min.js"></script>
 	<style>
-		td a { 
-    display: block; 
-    padding: 16px; 
-    color: #4c75f2;
-}
+	td a {
+		display: block;
+		padding: 16px;
+		color: #4c75f2;
+	}
 	</style>
 </head>
 
@@ -48,11 +73,9 @@
 			<div class="Navbar" style="padding-right: 0px; padding-left: 0px;">
 				<div class="navbar-right"> <span>
                                             <a href="https://github.com/covid19-thane/covid19-thane.github.io/blob/master/README.md">Info</a>
-                                          </span>
-				</div>
+                                          </span> </div>
 				<div class="navbar-middle"> <a href="https://covid19-thane.github.io/">Covid19<span>Thane</span>
-                                          </a>
-				</div>
+                                          </a> </div>
 				<div class="navbar-left">
 					<div class="custom-control custom-switch">
 						<input type="checkbox" class="custom-control-input" id="darkSwitch">
@@ -65,8 +88,7 @@
 			</div>
 			<table>
 				<caption>
-					<h1>Covid-19 Thane Hospitals</h1>
-				</caption>
+					<h1>Covid-19 Thane Hospitals</h1> </caption>
 				<thead>
 					<tr align="center">
 						<th class="state-heading">
@@ -80,79 +102,58 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><a onclick="toggleRow(this);">Ambarnath</a>
-						</td>
+						<td><a onclick="toggleRow(this);">Ambarnath</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
-							<p style="color:red;">	<b>1. Hospital Name:</b>
-							</p>
+							<p style="color:red;"> <b>1. Hospital Name:</b> </p>
 							<p style="color:#007bff;">Bijankur or City Hospital</p>
-							<p style="color:red;"><b>Address:</b>
-							</p>
+							<p style="color:red;"><b>Address:</b> </p>
 							<p style="color:#007bff;">Opp.Jai Bhawani Appt.Near Anand Park,Navre Nagar, Ambernath (E), Maharashtra 421501</p>
-							</p>
-							<p style="color:red;"><b>Total Beds:</b>
-							</p>
+							<p style="color:red;"><b>Total Beds:</b> </p>
 							<p style="color:#007bff;">-</p>
 							<br>
-							<p style="color:red;">	<b>2. Hospital Name:</b>
-							</p>
+							<p style="color:red;"> <b>2. Hospital Name:</b> </p>
 							<p style="color:#007bff;">Guardian Dental College</p>
-							<p style="color:red;"><b>Address:</b>
-							</p>
+							<p style="color:red;"><b>Address:</b> </p>
 							<p style="color:#007bff;">Survey No. 128, Jambhulgaon Road, Chikhloli, Ambernath (W), Maharashtra 421501</p>
-							</p>
-							<p style="color:red;"><b>Total Beds:</b>
-							</p>
+							<p style="color:red;"><b>Total Beds:</b> </p>
 							<p style="color:#007bff;">500</p>
-							<p style="color:red;">Free Ambulance Service for Non-Covid patients<a href="tel:+919156881003" target="_blank">9156881003</a>
-							</p>
+							<p style="color:red;">Free Ambulance Service for Non-Covid patients<a href="tel:+919156881003" target="_blank">9156881003</a> </p>
 							<p style="color:#007bff;">from Yuva Unity Foundation</p>
 						</td>
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow 2">
-						<td><a onclick="toggleRow(this);">Badlapur</a>
-						</td>
+						<td><a onclick="toggleRow(this);">Badlapur</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
-							<p style="color:red;">	<b>Hospital Name:</b>
-							</p>
+							<p style="color:red;"> <b>Hospital Name:</b> </p>
 							<p style="color:#007bff;">Central Hospital</p>
-							<p style="color:red;"><b>Address:</b>
-							</p>
+							<p style="color:red;"><b>Address:</b> </p>
 							<p style="color:#007bff;">Poddar Samrudhi Evergreen, Badlapur-Karjat Road, Badlapur East, Thane 421503</p>
-							</p>
-							<p style="color:red;"><b>Total Beds:</b>
-							</p>
+							<p style="color:red;"><b>Total Beds:</b> </p>
 							<p style="color:#007bff;">-</p>
 						</td>
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow">
-						<td><a onclick="toggleRow(this);">Bhiwandi</a>
-						</td>
+						<td><a onclick="toggleRow(this);">Bhiwandi</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
-							<p style="color:red;">	<b>Hospital Name:</b>
-							</p>
+							<p style="color:red;"> <b>Hospital Name:</b> </p>
 							<p style="color:#007bff;">Indira Gandhi Hospital Bhiwandi</p>
-							<p style="color:red;"><b>Address:</b>
-							</p>
+							<p style="color:red;"><b>Address:</b> </p>
 							<p style="color:#007bff;">Near Bhiwandi Court, Agra Road, Bhiwandi, Dist.- Thane 421302</p>
-							</p>
-							<p style="color:red;"><b>Total Beds:</b>
-							</p>
+							<p style="color:red;"><b>Total Beds:</b> </p>
 							<p style="color:#007bff;">-</p>
 						</td>
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow">
-						<td><a onclick="toggleRow(this);">BMC</a>
-						</td>
+						<td><a onclick="toggleRow(this);">BMC</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
@@ -161,8 +162,7 @@
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow">
-						<td><a onclick="toggleRow(this);">KDMC</a>
-						</td>
+						<td><a onclick="toggleRow(this);">KDMC</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
@@ -171,24 +171,20 @@
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow">
-						<td><a onclick="toggleRow(this);">Mumbai</a>
-						</td>
+						<td><a onclick="toggleRow(this);">Mumbai</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
-							<p style="color:red;"><b>Kindly Visit </b><a href="https://stopcoronavirus.mcgm.gov.in/key-updates-trends">Here</a>
-							</p>
+							<p style="color:red;"><b>Kindly Visit </b><a href="https://stopcoronavirus.mcgm.gov.in/key-updates-trends">Here</a> </p>
 						</td>
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow">
-						<td><a onclick="toggleRow(this);">Mira Bhaindar</a>
-						</td>
+						<td><a onclick="toggleRow(this);">Mira Bhaindar</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
-							<p style="color:red;">	<b>Hospital Name:</b>
-							</p>
+							<p style="color:red;"> <b>Hospital Name:</b> </p>
 							<p style="color:#007bff;">1. Pt. Bhimsen Joshi Hospital, Bhayandar ( 150 beds)
 								<br>
 								<br>2. Bhakti Vedant Hospital & Research Institute (100 beds)
@@ -224,35 +220,29 @@
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow">
-						<td><a onclick="toggleRow(this);">Navi Mumbai</a>
-						</td>
+						<td><a onclick="toggleRow(this);">Navi Mumbai</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
-							<p style="color:red;"><b>Kindly Visit </b><a href="https://navimumbai.city/list-of/hospitals">Here</a>
-							</p>
+							<p style="color:red;"><b>Kindly Visit </b><a href="https://navimumbai.city/list-of/hospitals">Here</a> </p>
 						</td>
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow">
-						<td><a onclick="toggleRow(this);">Thane</a>
-						</td>
+						<td><a onclick="toggleRow(this);">Thane</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
-							<p style="color:red;"><b>Kindly Visit </b><a href="https://covidthane.org/availabiltyOfHospitalBeds.html">Here</a>
-							</p>
+							<p style="color:red;"><b>Kindly Visit </b><a href="https://covidthane.org/availabiltyOfHospitalBeds.html">Here</a> </p>
 						</td>
 					</tr>
 					<tr></tr>
 					<tr align="center" class="parentRow">
-						<td><a onclick="toggleRow(this);">Ulhasnagar</a>
-						</td>
+						<td><a onclick="toggleRow(this);">Ulhasnagar</a> </td>
 					</tr>
 					<tr style="display: none;" class="subRow">
 						<td>
-							<p style="color:red;"><b>Kindly Visit </b><a href="http://www.covid.umcgov.in/AvailabilityOfHospitalBeds.aspx">Here</a>
-							</p>
+							<p style="color:red;"><b>Kindly Visit </b><a href="http://www.covid.umcgov.in/AvailabilityOfHospitalBeds.aspx">Here</a> </p>
 						</td>
 					</tr>
 				</tbody>
@@ -260,15 +250,13 @@
 			<br>
 			<center>
 				<div class="header fadeInUp" style="animation-delay: 2s;">
-					<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👪 Visitors:&nbsp;<a><img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7442022&style=0007&nbdigits=8&type=ip&initCount=0" title="Visitors" Alt="Visitors" border="0"></a><h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👀 Refreshs:&nbsp;<a><img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7442023&style=0007&nbdigits=8&type=page&initCount=287" title="Web Counter" Alt="Web Counter" border="0"></a></h5>
-				</div>
+					<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👪 Visitors:&nbsp;<a><img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7442022&style=0007&nbdigits=8&type=ip&initCount=0" title="Visitors" Alt="Visitors" border="0"></a><h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👀 Refreshs:&nbsp;<a><img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7442023&style=0007&nbdigits=8&type=page&initCount=287" title="Web Counter" Alt="Web Counter" border="0"></a></h5> </div>
 			</center>
 		</div>
 	</div>
 	<footer class="fadeInUp" style="animation-delay: 2s;">
 		<h5>#StayHome #StaySafe</h5>
-		<div class="link"> <a href="https://covid19-thane.github.io/" target="_blank" rel="noopener noreferrer">covid19thane dashboard</a>
-		</div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
+		<div class="link"> <a href="https://covid19-thane.github.io/" target="_blank" rel="noopener noreferrer">covid19thane dashboard</a> </div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
         &nbsp;&nbsp;
 
         
@@ -288,23 +276,22 @@
 		<a href="https://t.me/covid19thane" class="button telegram" target="_blank" rel="noopener noreferrer">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 				<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-			</svg> <span>Join Telegram Group</span>
-		</a>
+			</svg> <span>Join Telegram Group</span> </a>
 	</footer>
 	<script>
-		function toggleRow(e){
-		    var subRow = e.parentNode.parentNode.nextElementSibling;
-		    subRow.style.display = subRow.style.display === 'none' ? 'table-row' : 'none';    
-		}
+	function toggleRow(e) {
+		var subRow = e.parentNode.parentNode.nextElementSibling;
+		subRow.style.display = subRow.style.display === 'none' ? 'table-row' : 'none';
+	}
 	</script>
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 	<script>
-		var OneSignal = window.OneSignal || [];
-		              OneSignal.push(function() {
-		                OneSignal.init({
-		                  appId: "9a9b2c9b-843c-4f45-bea7-726c5ebc60d1",
-		                });
-		              });
+	var OneSignal = window.OneSignal || [];
+	OneSignal.push(function() {
+		OneSignal.init({
+			appId: "9a9b2c9b-843c-4f45-bea7-726c5ebc60d1",
+		});
+	});
 	</script>
 </body>
 
