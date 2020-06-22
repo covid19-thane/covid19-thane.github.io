@@ -29,71 +29,99 @@
 	<link rel="preload" importance="low" href="/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" importance="low" href="/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<style>
-		@font-face{font-family:Archia;src:url(/fonts/Archia/archia-semibold-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-semibold-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-semibold-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-semibold-webfont.woff) format('woff'),url(/fonts/Archia/archia-semibold-webfont.ttf) format('truetype');font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:Archia;src:url(/fonts/Archia/archia-medium-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-medium-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-medium-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-medium-webfont.woff) format('woff'),url(/fonts/Archia/archia-medium-webfont.ttf) format('truetype');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Archia;src:url(/fonts/Archia/archia-bold-webfont.eot);src:local('Archia'),url(/fonts/Archia/archia-bold-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/Archia/archia-bold-webfont.woff2) format('woff2'),url(/fonts/Archia/archia-bold-webfont.woff) format('woff'),url(/fonts/Archia/archia-bold-webfont.ttf) format('truetype');font-weight:900;font-style:normal;font-display:swap}
+	@font-face {
+		font-family: Archia;
+		src: url(/fonts/Archia/archia-semibold-webfont.eot);
+		src: local('Archia'), url(/fonts/Archia/archia-semibold-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-semibold-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-semibold-webfont.woff) format('woff'), url(/fonts/Archia/archia-semibold-webfont.ttf) format('truetype');
+		font-weight: 600;
+		font-style: normal;
+		font-display: swap
+	}
+	
+	@font-face {
+		font-family: Archia;
+		src: url(/fonts/Archia/archia-medium-webfont.eot);
+		src: local('Archia'), url(/fonts/Archia/archia-medium-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-medium-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-medium-webfont.woff) format('woff'), url(/fonts/Archia/archia-medium-webfont.ttf) format('truetype');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap
+	}
+	
+	@font-face {
+		font-family: Archia;
+		src: url(/fonts/Archia/archia-bold-webfont.eot);
+		src: local('Archia'), url(/fonts/Archia/archia-bold-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-bold-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-bold-webfont.woff) format('woff'), url(/fonts/Archia/archia-bold-webfont.ttf) format('truetype');
+		font-weight: 900;
+		font-style: normal;
+		font-display: swap
+	}
 	</style>
 	<link href="./styles/main.9022bc6f.chunk.css" rel="stylesheet">
 	<script src="./js/jquery-1.2.6.min.js"></script>
 	<script src="./js/jquery.tablesorter.min.js"></script>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
 	<style>
-		.text {
-		  font-size: 40px;
-		  transition: 2s all;
-		  text-align: center;
-		  margin-bottom: 40px;
+	.text {
+		font-size: 40px;
+		transition: 2s all;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	
+	p {
+		text-align: center;
+		font-size: 17px;
+	}
+	
+	.spaced {
+		letter-spacing: 20px;
+	}
+	
+	.icons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	
+	.icons .advice {
+		margin: 1rem;
+		transition: 0.5s all;
+		text-align: center;
+		animation: anim 2s forwards;
+	}
+	
+	.icons .advice .fas {
+		font-size: 30px;
+		animation: anim 2s forwards;
+	}
+	
+	@keyframes anim {
+		to {
+			padding: 2px;
 		}
-		
-		p {
-		  text-align: center;
-		  font-size: 17px;
-		}
-		
+	}
+	
+	@media screen and (max-width: 420px) {
 		.spaced {
-		  letter-spacing: 20px;
+			letter-spacing: 8px;
 		}
-		
-		.icons {
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: space-around;
-		}
-		.icons .advice {
-		  margin: 1rem;
-		  transition: 0.5s all;
-		  text-align: center;
-		  animation: anim 2s forwards;
-		}
-		.icons .advice .fas {
-		  font-size: 30px;
-		  animation: anim 2s forwards;
-		}
-		
-		@keyframes anim {
-		  to {
-		    padding: 2px;
-		  }
-		}
-		@media screen and (max-width: 420px) {
-		  .spaced {
-		    letter-spacing: 8px;
-		  }
-		}
+	}
 	</style>
 </head>
 
 <body onload="startTime()">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" style="padding-top: 5px; padding-bottom: 5px;padding-left: 15px;padding-right: 15px;"/>
-<a id="popuplink" href="#inline" style="display:none;margin: auto; height: auto; width: auto;"></a>
-<div id="inline" style="display:none;text-align: center;margin: auto; height: auto; width: auto;">
-	<p style="margin-top: 5px;margin-bottom: 0px;"><a href="javascript:;" onclick="jQuery.fancybox.close();" style="background-color:#333;padding:5px 10px;color:#fff;border-radius:5px;text-decoration:none;">Close</a></p>
-	<br>
-<h1 class="text" style="
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" style="padding-top: 5px; padding-bottom: 5px;padding-left: 15px;padding-right: 15px;" />
+	<a id="popuplink" href="#inline" style="display:none;margin: auto; height: auto; width: auto;"></a>
+	<div id="inline" style="display:none;text-align: center;margin: auto; height: auto; width: auto;">
+		<p style="margin-top: 5px;margin-bottom: 0px;"><a href="javascript:;" onclick="jQuery.fancybox.close();" style="background-color:#333;padding:5px 10px;color:#fff;border-radius:5px;text-decoration:none;">Close</a></p>
+		<br>
+		<h1 class="text" style="
     margin-bottom: 0px;
     margin-top: 0px;
 ">
 Social Distancing
 </h1>
-				<h2 style="
+		<h2 style="
     margin-top: 10px;
     margin-bottom: 10px;
 ">
@@ -107,30 +135,26 @@ maintaining at least 1m (3ft) between you and others.
 					
                                                 </p>
                                               </h2>
-				<div class="icons"> <span class="advice" style="display: block;opacity: 1;margin-top: 0px;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;">
+		<div class="icons"> <span class="advice" style="display: block;opacity: 1;margin-top: 0px;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;">
                                                   <i class="fas fa-handshake-alt-slash"></i>
                                                   <h3 style="
     margin-top: 0px;margin-bottom: 0px;
 ">Avoid physical contact</h3>
-                                                </span>
-					<span class="advice" style="display: block;opacity: 1;margin-top: 0px;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;">
+                                                </span> <span class="advice" style="display: block;opacity: 1;margin-top: 0px;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;">
                                                   <i class="fas fa-hands-wash"></i>
                                                   <h3 style="
     margin-top: 0px;margin-bottom: 0px;
 ">Wash your hands</h3>
-                                                </span>
-					<span class="advice" style="display: block;opacity: 1;margin-top: 0px;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;">
+                                                </span> <span class="advice" style="display: block;opacity: 1;margin-top: 0px;margin-left: 0px;margin-bottom: 0px;margin-right: 0px;">
                                                   <i class="fas fa-head-side-mask"></i>
                                                   <h3 style="
     margin-top: 0px;
     margin-bottom: 0px;
 ">Use mask</h3>
-                                                </span>
-				</div>
-	<footer style="margin-top: 0px;margin-bottom: 0px;">
-		<h5>#StayHome #StaySafe</h5>
-		<div class="link"> <a href="https://covid19-thane.github.io/hospitals" target="_blank" rel="noopener noreferrer">covid19thane hospitals</a>
-		</div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
+                                                </span> </div>
+		<footer style="margin-top: 0px;margin-bottom: 0px;">
+			<h5>#StayHome #StaySafe</h5>
+			<div class="link"> <a href="https://covid19-thane.github.io/hospitals" target="_blank" rel="noopener noreferrer">covid19thane hospitals</a> </div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
         &nbsp;&nbsp;
 
         
@@ -147,23 +171,20 @@ maintaining at least 1m (3ft) between you and others.
                                                     <span>Share it on Whatsapp&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
                                                   </a>
-		<a href="https://t.me/covid19thane" class="button telegram" target="_blank" rel="noopener noreferrer">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-				<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-			</svg> <span>Join Telegram Group</span>
-		</a>
-	</footer>
-</div>
+			<a href="https://t.me/covid19thane" class="button telegram" target="_blank" rel="noopener noreferrer">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+				</svg> <span>Join Telegram Group</span> </a>
+		</footer>
+	</div>
 	<div id="root" style="margin: auto; height: auto; width: auto; padding-right: 0px; padding-left: 0px;">
 		<div class="App">
 			<div class="Navbar" style="padding-right: 0px; padding-left: 0px;">
 				<div class="navbar-right"> <span>
                                             <a href="https://github.com/covid19-thane/covid19-thane.github.io/blob/master/README.md">Info</a>
-                                          </span>
-				</div>
+                                          </span> </div>
 				<div class="navbar-middle"> <a href="">Covid19<span>Thane</span>
-                                          </a>
-				</div>
+                                          </a> </div>
 				<div class="navbar-left">
 					<div class="custom-control custom-switch">
 						<input type="checkbox" class="custom-control-input" id="darkSwitch">
@@ -193,57 +214,50 @@ maintaining at least 1m (3ft) between you and others.
 					</div>
 				</div>
 				<div class="Level MapExplorer fadeInUp" style="animation-delay: 1s;">
-	<div class="map-stats" style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px; margin-bottom: 0px;">
-		<div class="level-item stats is-cherry">
-			<h5 class="heading">Confirmed</h5>
-			<div class="stats-bottom">
-				<div class="stat__item confirmedtha">
-					<h1>
+					<div class="map-stats" style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px; margin-bottom: 0px;">
+						<div class="level-item stats is-cherry">
+							<h5 class="heading">Confirmed</h5>
+							<div class="stats-bottom">
+								<div class="stat__item confirmedtha">
+									<h1>
                                                     <span class="number notranslate">🔃</span>
-                                                  </h1>
-				</div>
-			</div>
-		</div>
-		<div class="level-item stats is-blue">
-			<h5 class="heading">Active</h5>
-			<div class="stats-bottom">
-				<div class="stat__item activetha">
-					<h1 class="title has-text-info">
+                                                  </h1> </div>
+							</div>
+						</div>
+						<div class="level-item stats is-blue">
+							<h5 class="heading">Active</h5>
+							<div class="stats-bottom">
+								<div class="stat__item activetha">
+									<h1 class="title has-text-info">
                                                     <span class="number notranslate">🔃</span>
-                                                  </h1>
-				</div>
-			</div>
-		</div>
-		<div class="level-item stats is-green">
-			<h5 class="heading">Recovered</h5>
-			<div class="stats-bottom">
-				<div class="stat__item recoveredtha">
-					<h1 class="title has-text-success">
+                                                  </h1> </div>
+							</div>
+						</div>
+						<div class="level-item stats is-green">
+							<h5 class="heading">Recovered</h5>
+							<div class="stats-bottom">
+								<div class="stat__item recoveredtha">
+									<h1 class="title has-text-success">
                                                     <span class="number notranslate">🔃</span>
-                                                  </h1>
-				</div>
-			</div>
-		</div>
-		<div class="level-item stats is-gray">
-			<h5 class="heading">Deceased</h5>
-			<div class="stats-bottom">
-				<div class="stat__item deceasedtha">
-					<h1 class="title has-text-grey">
+                                                  </h1> </div>
+							</div>
+						</div>
+						<div class="level-item stats is-gray">
+							<h5 class="heading">Deceased</h5>
+							<div class="stats-bottom">
+								<div class="stat__item deceasedtha">
+									<h1 class="title has-text-grey">
                                                     <span class="number notranslate">🔃</span>
-                                                  </h1>
+                                                  </h1> </div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
 			</div>
 			<div class="header fadeInUp" style="animation-delay: 1s;">
-				
-					<h5 class="table-fineprint fadeInUp" style="animation-delay: 1.5s;margin-right: 0px;">Compiled from Press Releases.&nbsp;
+				<h5 class="table-fineprint fadeInUp" style="animation-delay: 1.5s;margin-right: 0px;">Compiled from Press Releases.&nbsp;
                                                   <a href="https://www.google.com/search?q=press+release&oq=press+release" style="color: rgb(108, 117, 125);">know more!</a>
-                                                </h5>
-				
-			</div>
+                                                </h5> </div>
 			<center>
 				<table class="table fadeInUp" align="center" style="table-layout: fixed; margin: auto;height: auto; width: auto; animation-delay: 1.8s; padding-right: 0px; padding-left: 0px;">
 					<thead>
@@ -256,28 +270,23 @@ maintaining at least 1m (3ft) between you and others.
 								</div>
 							</th>
 							<th>
-								<div class="heading-content"> <abbr class="is-confirmed" title="confirmed">C</abbr>
-								</div>
+								<div class="heading-content"> <abbr class="is-confirmed" title="confirmed">C</abbr> </div>
 							</th>
 							<th>
-								<div class="heading-content"> <abbr class="is-active" title="active">A</abbr>
-								</div>
+								<div class="heading-content"> <abbr class="is-active" title="active">A</abbr> </div>
 							</th>
 							<th>
-								<div class="heading-content"> <abbr class="is-recovered" title="recovered">R</abbr>
-								</div>
+								<div class="heading-content"> <abbr class="is-recovered" title="recovered">R</abbr> </div>
 							</th>
 							<th>
-								<div class="heading-content"> <abbr class="is-deaths" title="deaths">D</abbr>
-								</div>
+								<div class="heading-content"> <abbr class="is-deaths" title="deaths">D</abbr> </div>
 							</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<div class="title-chevron"> <span class="title-icon">Ambarnath</span>
-								</div>
+								<div class="title-chevron"> <span class="title-icon">Ambarnath</span> </div>
 							</td>
 							<td>
 								<div class="stat__item confirmedamb"> <span class="delta is-confirmed">
@@ -287,15 +296,12 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
 								<div class="stat__item activeamb"> <span class="delta is-active">
-                                                          <span class="number notranslate">🔃</span>
-									</span>
+                                                          <span class="number notranslate">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -306,9 +312,7 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -319,16 +323,13 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<div class="title-chevron"> <span class="title-icon">Badlapur</span>
-								</div>
+								<div class="title-chevron"> <span class="title-icon">Badlapur</span> </div>
 							</td>
 							<td>
 								<div class="stat__item confirmedbad"> <span class="delta is-confirmed">
@@ -338,15 +339,12 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
 								<div class="stat__item activebad"> <span class="delta is-active">
-                                                          <span class="number notranslate">🔃</span>
-									</span>
+                                                          <span class="number notranslate">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -357,9 +355,7 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -370,16 +366,13 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<div class="title-chevron"> <span class="title-icon">Bhiwandi<br>(C+R)</span>
-								</div>
+								<div class="title-chevron"> <span class="title-icon">Bhiwandi<br>(C+R)</span> </div>
 							</td>
 							<td>
 								<div class="stat__item confirmedbhi"> <span class="delta is-confirmed">
@@ -389,15 +382,12 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
 								<div class="stat__item activebhi"> <span class="delta is-active">
-                                                          <span class="number notranslate">🔃</span>
-									</span>
+                                                          <span class="number notranslate">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -408,9 +398,7 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -421,16 +409,13 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<div class="title-chevron"> <span class="title-icon">KDMC</span>
-								</div>
+								<div class="title-chevron"> <span class="title-icon">KDMC</span> </div>
 							</td>
 							<td>
 								<div class="stat__item confirmedkal"> <span class="delta is-confirmed">
@@ -440,15 +425,12 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
 								<div class="stat__item activekal"> <span class="delta is-active">
-                                                          <span class="number notranslate">🔃</span>
-									</span>
+                                                          <span class="number notranslate">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -459,9 +441,7 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -472,16 +452,13 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<div class="title-chevron"> <span class="title-icon">Mira<br>Bhaindar</span>
-								</div>
+								<div class="title-chevron"> <span class="title-icon">Mira<br>Bhaindar</span> </div>
 							</td>
 							<td>
 								<div class="stat__item confirmedmb"> <span class="delta is-confirmed">
@@ -491,15 +468,12 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
 								<div class="stat__item activemb"> <span class="delta is-active">
-                                                          <span class="number notranslate">🔃</span>
-									</span>
+                                                          <span class="number notranslate">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -510,9 +484,7 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -523,16 +495,13 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<div class="title-chevron"> <span class="title-icon">Navi<br>Mumbai</span>
-								</div>
+								<div class="title-chevron"> <span class="title-icon">Navi<br>Mumbai</span> </div>
 							</td>
 							<td>
 								<div class="stat__item confirmednm"> <span class="delta is-confirmed">
@@ -542,15 +511,12 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
 								<div class="stat__item activenm"> <span class="delta is-active">
-                                                          <span class="number notranslate">🔃</span>
-									</span>
+                                                          <span class="number notranslate">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -561,9 +527,7 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -574,16 +538,13 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<div class="title-chevron"> <span class="title-icon">Thane</span>
-								</div>
+								<div class="title-chevron"> <span class="title-icon">Thane</span> </div>
 							</td>
 							<td>
 								<div class="stat__item confirmedthane"> <span class="delta is-confirmed">
@@ -593,15 +554,12 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
 								<div class="stat__item activethane"> <span class="delta is-active">
-                                                          <span class="number notranslate">🔃</span>
-									</span>
+                                                          <span class="number notranslate">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -612,9 +570,7 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -625,16 +581,13 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<div class="title-chevron"> <span class="title-icon">Ulhasnagar</span>
-								</div>
+								<div class="title-chevron"> <span class="title-icon">Ulhasnagar</span> </div>
 							</td>
 							<td>
 								<div class="stat__item confirmedul"> <span class="delta is-confirmed">
@@ -644,15 +597,12 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
 								<div class="stat__item activeul"> <span class="delta is-active">
-                                                          <span class="number notranslate">🔃</span>
-									</span>
+                                                          <span class="number notranslate">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -663,9 +613,7 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 							<td>
@@ -676,16 +624,24 @@ maintaining at least 1m (3ft) between you and others.
                                                               <line x1="12" y1="19" x2="12" y2="5"></line>
                                                               <polyline points="5 12 12 5 19 12"></polyline>
                                                             </svg>
-                                                            <span class="new"></span>
-									</sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span>
-									</span>
+                                                            <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								</div>
 							</td>
 						</tr>
 					</tbody>
 					<tr class="state-last-update">
-						<td colspan="3" style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;"><p class="spacer"></p><p><nobr>Updated Everyday upto 9:00 p.m.</nobr></p></td>
-						<td colspan="3" style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;"><p class="spacer"></p><nobr><p id="date" style="padding-left: 30px;"></p></nobr></td>
+						<td colspan="3" style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;">
+							<p class="spacer"></p>
+							<p>
+								<nobr>Updated Everyday upto 9:00 p.m.</nobr>
+							</p>
+						</td>
+						<td colspan="3" style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;">
+							<p class="spacer"></p>
+							<nobr>
+								<p id="date" style="padding-left: 30px;"></p>
+							</nobr>
+						</td>
 					</tr>
 				</table>
 			</center>
@@ -702,10 +658,8 @@ maintaining at least 1m (3ft) between you and others.
 					<a href="#source">👉 &nbsp;Click Here For Detailed Reports!&nbsp; 👈</a></center><br>
 					<marquee style="color:Red;"><b>Note:</b>&nbsp; If New Cases are shown <b>Zero (↑ 0)</b> , Please Visit Back After Some Time it will be updated as soon as possible.</marquee>
 				</h5>
-				
 				<div class="actions">
-					<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s;">Official Sites</h5>
-				</div>
+					<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s;">Official Sites</h5> </div>
 				<div class="pills fadeInUp" class="header fadeInUp" style="animation-delay: 2s;">
 					<button type="button" onclick="window.location.href='http://ambarnathcouncil.net/';">Ambarnath</button>
 					<button type="button" onclick="window.location.href='https://kbmc.gov.in/';">Badlapur</button>
@@ -726,14 +680,12 @@ maintaining at least 1m (3ft) between you and others.
                                                       <a>
                                                         <img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7351848&style=0007&nbdigits=8&type=page&initCount=287" title="Web Counter" Alt="Web Counter" border="0">
                                                         </a>
-                                                      </h5>
-			</div>
+                                                      </h5> </div>
 		</div>
 	</div>
 	<footer class="fadeInUp" style="animation-delay: 2s;">
 		<h5>#StayHome #StaySafe</h5>
-		<div class="link"> <a href="https://covid19-thane.github.io/hospitals" target="_blank" rel="noopener noreferrer">covid19thane hospitals</a>
-		</div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
+		<div class="link"> <a href="https://covid19-thane.github.io/hospitals" target="_blank" rel="noopener noreferrer">covid19thane hospitals</a> </div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
         &nbsp;&nbsp;
 
         
@@ -753,109 +705,116 @@ maintaining at least 1m (3ft) between you and others.
 		<a href="https://t.me/covid19thane" class="button telegram" target="_blank" rel="noopener noreferrer">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 				<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-			</svg> <span>Join Telegram Group</span>
-		</a>
+			</svg> <span>Join Telegram Group</span> </a>
 		<br />
 		<div style="height: auto; width: auto;" id="source"> <a class="twitter-timeline" href="https://twitter.com/Covid19Thane?ref_src=twsrc%5Etfw">Tweets by Covid19Thane</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 	</footer>
 	<script>
-		function startTime() {
-		              var today = new Date();
-		              var h = today.getHours();
-		              var m = today.getMinutes();
-		              var s = today.getSeconds();
-		              m = checkTime(m);
-		              s = checkTime(s);
-		              document.getElementById('time').innerHTML =
-		              h + ":" + m + ":" + s;
-		              document.getElementById('time').innerHTML=today;
-		              var t = setTimeout(startTime, 500);
-		            }
-		            function checkTime(i) {
-		              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-		              return i;
-		            }
+	function startTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		m = checkTime(m);
+		s = checkTime(s);
+		document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+		document.getElementById('time').innerHTML = today;
+		var t = setTimeout(startTime, 500);
+	}
+
+	function checkTime(i) {
+		if(i < 10) {
+			i = "0" + i
+		}; // add zero in front of numbers < 10
+		return i;
+	}
 	</script>
 	<script>
-		window.onclick = function () {
-	  document.querySelector(".text").classList.add("spaced");
-	
-	  const steps = document.querySelectorAll(".advice");
-	  var count = 0;
-	  setInterval(() => {
-	    steps[count].style.display = "block";
-	    steps[count].style.opacity = "1.0";
-	  }, 3000);
+	window.onclick = function() {
+		document.querySelector(".text").classList.add("spaced");
+		const steps = document.querySelectorAll(".advice");
+		var count = 0;
+		setInterval(() => {
+			steps[count].style.display = "block";
+			steps[count].style.opacity = "1.0";
+		}, 3000);
 	};
 	</script>
 	<script type="text/javascript">
-		function googleTranslateElementInit() {
-		      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-		    }
-		
-			function triggerHtmlEvent(element, eventName) {
-			  var event;
-			  if (document.createEvent) {
-				event = document.createEvent('HTMLEvents');
-				event.initEvent(eventName, true, true);
-				element.dispatchEvent(event);
-			  } else {
-				event = document.createEventObject();
-				event.eventType = eventName;
-				element.fireEvent('on' + event.eventType, event);
-			  }
-			}
-		
-			jQuery('.lang-select').click(function() {
-			  var theLang = jQuery(this).attr('data-lang');
-			  jQuery('.goog-te-combo').val(theLang);
-		
-			  //alert(jQuery(this).attr('href'));
-			  window.location = jQuery(this).attr('href');
-			  location.reload();
-		
-			});
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({
+			pageLanguage: 'en',
+			layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+		}, 'google_translate_element');
+	}
+
+	function triggerHtmlEvent(element, eventName) {
+		var event;
+		if(document.createEvent) {
+			event = document.createEvent('HTMLEvents');
+			event.initEvent(eventName, true, true);
+			element.dispatchEvent(event);
+		} else {
+			event = document.createEventObject();
+			event.eventType = eventName;
+			element.fireEvent('on' + event.eventType, event);
+		}
+	}
+	jQuery('.lang-select').click(function() {
+		var theLang = jQuery(this).attr('data-lang');
+		jQuery('.goog-te-combo').val(theLang);
+		//alert(jQuery(this).attr('href'));
+		window.location = jQuery(this).attr('href');
+		location.reload();
+	});
 	</script>
 	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	<script>
-		n = new Date();
-		y = n.getFullYear();
-		m = n.getMonth() + 1;
-		d = n.getDate();
-		document.getElementById("date").innerHTML = "Up to" + " " + d + "/" + m + "/" + y;
+	n = new Date();
+	y = n.getFullYear();
+	m = n.getMonth() + 1;
+	d = n.getDate();
+	document.getElementById("date").innerHTML = "Up to" + " " + d + "/" + m + "/" + y;
 	</script>
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 	<script>
-		var OneSignal = window.OneSignal || [];
-		              OneSignal.push(function() {
-		                OneSignal.init({
-		                  appId: "9a9b2c9b-843c-4f45-bea7-726c5ebc60d1",
-		                });
-		              });
+	var OneSignal = window.OneSignal || [];
+	OneSignal.push(function() {
+		OneSignal.init({
+			appId: "9a9b2c9b-843c-4f45-bea7-726c5ebc60d1",
+		});
+	});
 	</script>
-		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script><script>
-jQuery(document).ready(function () {
-    function openFancybox() {
-        setTimeout(function () {
-            jQuery('#popuplink').trigger('click');
-        }, 500);
-    };
-    var visited = jQuery.cookie('visited');
-    if (visited == 'yes') {
-         // second page load, cookie active
-    } else {
-        openFancybox(); // first page load, launch fancybox
-    }
-    jQuery.cookie('visited', 'yes', {
-        expires: 1 // the number of days cookie  will be effective
-    });
-    jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
-});
-</script>
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+		function openFancybox() {
+			setTimeout(function() {
+				jQuery('#popuplink').trigger('click');
+			}, 500);
+		};
+		var visited = jQuery.cookie('visited');
+		if(visited == 'yes') {
+			// second page load, cookie active
+		} else {
+			openFancybox(); // first page load, launch fancybox
+		}
+		jQuery.cookie('visited', 'yes', {
+			expires: 1 // the number of days cookie  will be effective
+		});
+		jQuery("#popuplink").fancybox({
+			modal: true,
+			maxWidth: 400,
+			overlay: {
+				closeClick: true
+			}
+		});
+	});
+	</script>
 	<script src="./js/bad.js"></script>
 	<script src="./js/kal.js"></script>
 	<script src="./js/thane.js"></script>
