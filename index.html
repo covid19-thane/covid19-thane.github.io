@@ -147,6 +147,16 @@
 	  background-color: #6c757d;
 	}
 </style>
+	<style>
+	.checkbox{
+    width: 23px;
+    height: 21px;
+     background: transparent url(./moon.svg ) no-repeat 0 50%
+}
+.checked{
+    background: transparent url(./sun.svg ) no-repeat 80% 50%
+}
+</style>
 </head>
 
 <body onload="startTime()">
@@ -210,11 +220,8 @@ maintaining at least 1m (3ft) between you and others.
 				<div class="navbar-middle"> <a href="">Covid19<span>Thane</span>
                                           </a> </div>
 				<div class="navbar-left">
-					<div class="custom-control custom-switch">
-						<input type="checkbox" class="custom-control-input" id="darkSwitch">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-						</svg>
+					<div class="custom-control custom-switch checkbox">
+						<input type="checkbox" class="custom-control-input" id="darkSwitch" style="opacity: 0;">
 					</div>
 					<script src="./js/dark-mode-switch.min.js"></script>
 				</div>
@@ -775,9 +782,14 @@ maintaining at least 1m (3ft) between you and others.
 	  }
 	  slides[slideIndex-1].style.display = "block";  
 	  dots[slideIndex-1].className += " active";
-	  setTimeout(showSlides, 10000); // Change image every 2 seconds
+	  setTimeout(showSlides, 10000); // Change image every 10 seconds
 	}
 </script>	
+		<script>
+	$(".checkbox").click(function(){
+    $(this).toggleClass('checked')
+});
+</script>
 	<script>
 	function startTime() {
 		var today = new Date();
