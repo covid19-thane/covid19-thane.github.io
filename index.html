@@ -14,17 +14,17 @@
 	<meta name="robots" content="index,follow" />
 	<meta name="title" content="Covid-19 Dashboard" />
 	<title>Covid-19 Dashboard</title>
-	<link rel="shortcut icon" href="https://img.icons8.com/office/50/000000/coronavirus.png" type="image/x-icon">
+	<link rel="shortcut icon" href="./icon.png" type="image/x-icon">
 	<meta property="og:title" content="Covid-19 Dashboard">
 	<meta property="og:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar.">
-	<meta property="og:image" content="https://img.icons8.com/office/50/000000/coronavirus.png">
+	<meta property="og:image" content="./icon.png">
 	<meta property="og:url" content="http://covid19-thane.github.io">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" value="@covid19thane" />
 	<meta property="twitter:url" content="https://covid19-thane.github.io" />
 	<meta property="twitter:title" content="Covid-19 Dashboard" />
 	<meta property="twitter:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
-	<meta property="twitter:image" content="https://img.icons8.com/office/50/000000/coronavirus.png" />
+	<meta property="twitter:image" content="./icon.png" />
 	<link rel="preload" importance="low" href="/fonts/Archia/archia-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" importance="low" href="/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" importance="low" href="/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -59,7 +59,7 @@
 	<link href="./styles/main.9022bc6f.chunk.css" rel="stylesheet">
 	<script src="./js/jquery-1.2.6.min.js"></script>
 	<script src="./js/jquery.tablesorter.min.js"></script>
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+	
 	<style>
 	.text {
 		font-size: 40px;
@@ -130,7 +130,7 @@ Social Distancing
     margin-bottom: 0px;
 ">
 Help prevent the spread of Coronavirus 
-                                                  <i class="fas fa-virus"></i> by
+                                                  <img src="./icon.png" style="width:16px;height:16px;"> by
 maintaining at least 1m (3ft) between you and others.
 					
                                                 </p>
@@ -706,12 +706,6 @@ maintaining at least 1m (3ft) between you and others.
 	<script>
 	window.onclick = function() {
 		document.querySelector(".text").classList.add("spaced");
-		const steps = document.querySelectorAll(".advice");
-		var count = 0;
-		setInterval(() => {
-			steps[count].style.display = "block";
-			steps[count].style.opacity = "1.0";
-		}, 3000);
 	};
 	</script>
 	<script type="text/javascript">
@@ -780,7 +774,6 @@ maintaining at least 1m (3ft) between you and others.
 		});
 		jQuery("#popuplink").fancybox({
 			modal: true,
-			maxWidth: 400,
 			overlay: {
 				closeClick: true
 			}
