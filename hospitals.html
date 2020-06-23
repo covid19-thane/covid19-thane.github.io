@@ -65,6 +65,16 @@
 		color: #4c75f2;
 	}
 	</style>
+	<style>
+	.checkbox{
+    width: 23px;
+    height: 21px;
+     background: transparent url(./moon.svg ) no-repeat 0 50%
+}
+.checked{
+    background: transparent url(./sun.svg ) no-repeat 80% 50%
+}
+</style>
 </head>
 
 <body>
@@ -77,11 +87,8 @@
 				<div class="navbar-middle"> <a href="https://covid19-thane.github.io/">Covid19<span>Thane</span>
                                           </a> </div>
 				<div class="navbar-left">
-					<div class="custom-control custom-switch">
-						<input type="checkbox" class="custom-control-input" id="darkSwitch">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-						</svg>
+					<div class="custom-control custom-switch checkbox">
+						<input type="checkbox" class="custom-control-input" id="darkSwitch" style="opacity: 0;">
 					</div>
 					<script src="./js/dark-mode-switch.min.js"></script>
 				</div>
@@ -293,6 +300,11 @@
 		});
 	});
 	</script>
+		<script>
+	$(".checkbox").click(function(){
+    $(this).toggleClass('checked')
+});
+</script>
 </body>
 
 </html>
