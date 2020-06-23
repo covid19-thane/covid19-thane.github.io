@@ -4542,7 +4542,7 @@ footer img {
 }
 
 .dark-mode,.dark-mode .switch-wrapper>div {
-  background: #000!important;
+  background: #121212!important;
 }
 
 .dark-mode .expand {
@@ -4558,7 +4558,7 @@ footer img {
 }
 
 .dark-mode .expand .navbar-right,.dark-mode .Navbar .navbar-right,.dark-mode table .is-odd,.dark-mode table th {
-  background: #111!important;
+  background: #27272727!important;
 }
 
 .dark-mode table .state-page-link {
