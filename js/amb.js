@@ -21,4 +21,10 @@ fetch(amb)
       myData[1];
     document.querySelector(".stat__item.deceasedamb .new").textContent =`${
       myData[1] - myData[3]}`;
+    document.querySelector(".ambact").textContent = `${
+      (myData[0] - myData[4] - myData[1]) / myData[0] * 100}`;  
+    document.querySelector(".ambrec").textContent =`${
+      myData[4] / myData[0] * 100 }`;  
+    document.querySelector(".ambdec").textContent =`${
+      myData[1] / myData[0] * 100 }`; 
   });
