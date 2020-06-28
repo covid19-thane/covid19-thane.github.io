@@ -21,4 +21,10 @@ fetch(kal)
       myData[1];
     document.querySelector(".stat__item.deceasedkal .new").textContent =`${
       myData[1] - myData[3]}`;
+    document.querySelector(".kalact").textContent = `${
+      (myData[0] - myData[4] - myData[1]) / myData[0] * 100}`;  
+    document.querySelector(".kalrec").textContent =`${
+      myData[4] / myData[0] * 100 }`;  
+    document.querySelector(".kaldec").textContent =`${
+      myData[1] / myData[0] * 100 }`;
   });
