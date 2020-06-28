@@ -21,4 +21,10 @@ fetch(mn)
       myData[1];
     document.querySelector(".stat__item.deceasedmb .new").textContent =`${
       myData[1] - myData[3]}`;
+    document.querySelector(".miraact").textContent = `${
+      (myData[0] - myData[4] - myData[1]) / myData[0] * 100}`;  
+    document.querySelector(".mirarec").textContent =`${
+      myData[4] / myData[0] * 100 }`;  
+    document.querySelector(".miradec").textContent =`${
+      myData[1] / myData[0] * 100 }`;
   });
