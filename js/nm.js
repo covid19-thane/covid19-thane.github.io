@@ -21,4 +21,10 @@ fetch(nm)
       myData[1];
     document.querySelector(".stat__item.deceasednm .new").textContent =`${
       myData[1] - myData[3]}`;
+    document.querySelector(".nmact").textContent = `${
+      (myData[0] - myData[4] - myData[1]) / myData[0] * 100}`;  
+    document.querySelector(".nmrec").textContent =`${
+      myData[4] / myData[0] * 100 }`;  
+    document.querySelector(".nmdec").textContent =`${
+      myData[1] / myData[0] * 100 }`;
   });
