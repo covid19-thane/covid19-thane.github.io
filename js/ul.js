@@ -21,4 +21,10 @@ fetch(ul)
       myData[1];
     document.querySelector(".stat__item.deceasedul .new").textContent =`${
       myData[1] - myData[3]}`;
+    document.querySelector(".ulact").textContent = `${
+      (myData[0] - myData[4] - myData[1]) / myData[0] * 100}`;  
+    document.querySelector(".ulrec").textContent =`${
+      myData[4] / myData[0] * 100 }`;  
+    document.querySelector(".uldec").textContent =`${
+      myData[1] / myData[0] * 100 }`; 
   });
