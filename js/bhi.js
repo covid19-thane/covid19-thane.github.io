@@ -21,4 +21,10 @@ fetch(bhi)
       myData[1];
     document.querySelector(".stat__item.deceasedbhi .new").textContent =`${
       myData[1] - myData[3]}`;
+    document.querySelector(".bhiact").textContent = `${
+      (myData[0] - myData[4] - myData[1]) / myData[0] * 100}`;  
+    document.querySelector(".bhirec").textContent =`${
+      myData[4] / myData[0] * 100 }`;  
+    document.querySelector(".bhidec").textContent =`${
+      myData[1] / myData[0] * 100 }`; 
   });
