@@ -21,4 +21,10 @@ fetch(thanec)
       myData[1];
     document.querySelector(".stat__item.deceasedthane .new").textContent =`${
       myData[1] - myData[3]}`;
+    document.querySelector(".thaact").textContent = `${
+      (myData[0] - myData[4] - myData[1]) / myData[0] * 100}`;  
+    document.querySelector(".tharec").textContent =`${
+      myData[4] / myData[0] * 100 }`;  
+    document.querySelector(".thadec").textContent =`${
+      myData[1] / myData[0] * 100 }`;
   });
