@@ -21,4 +21,10 @@ fetch(bad)
       myData[1];
     document.querySelector(".stat__item.deceasedbad .new").textContent =`${
       myData[1] - myData[3]}`;
+    document.querySelector(".badact").textContent = `${
+      (myData[0] - myData[4] - myData[1]) / myData[0] * 100}`;  
+    document.querySelector(".badrec").textContent =`${
+      myData[4] / myData[0] * 100 }`;  
+    document.querySelector(".baddec").textContent =`${
+      myData[1] / myData[0] * 100 }`; 
   });
