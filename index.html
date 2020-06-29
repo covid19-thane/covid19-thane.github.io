@@ -232,7 +232,7 @@ maintaining at least 1m (3ft) between you and others.
 					<h5>
                                               <span class="notranslate" id="time"></span>
                                               <br>
-                                                <br>Thane District
+                                                <br>Thane District ,&nbsp;<strong class="lockdown-day" id="lockdown-day"></strong><sup id="sup"></sup> day of lockdown</h4>
 
 
                         
@@ -816,6 +816,45 @@ maintaining at least 1m (3ft) between you and others.
 	  setTimeout(showSlides, 10000); // Change image every 10 seconds
 	}
 </script>	
+		<script>function lockDown() {
+	let date1 = new Date("03/24/2020");
+	let today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth() + 1;
+	var yyyy = today.getFullYear();
+	if (dd < 10) {
+		dd = '0' + dd;
+	}
+	if (mm < 10) {
+		mm = '0' + mm;
+	}
+	today = mm + '/' + dd + '/' + yyyy;
+	let date2 = new Date(today);
+	let Difference_In_Time = date2.getTime() - date1.getTime();
+	let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+	//console.log(Difference_In_Days)
+	//
+	let lockdays = document.getElementById("lockdown-day");
+	lockdays.innerHTML = Difference_In_Days;
+	let sup = document.getElementById("sup");
+	sup.innerHTML = ordinal_suffix_of(Difference_In_Days);
+}
+
+function ordinal_suffix_of(s) {
+	let j = s % 10,
+		k = s % 100;
+	if (j == 1 && k != 11) {
+		return "st";
+	}
+	if (j == 2 && k != 12) {
+		return "nd";
+	}
+	if (j == 3 && k != 13) {
+		return "rd";
+	}
+	return "th";
+}
+lockDown();</script>
 		<script>
 	$(".checkbox").click(function(){
     $(this).toggleClass('checked')
