@@ -1464,7 +1464,7 @@ abbr.is-gray {
 table {
   align-self: center;
   border-collapse: separate;
-  border-spacing: 3px 4px;
+  
   font-family: "archia";
   position: relative;
   width: 30rem;
@@ -1473,7 +1473,7 @@ table {
 table thead {
   background: rgba(108,117,125,.0627451);
   color: #6c757d;
-  font-size: .75rem;
+  font-size: .6rem;
   text-align: left;
 }
 
