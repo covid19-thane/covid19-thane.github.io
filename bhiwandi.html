@@ -1,0 +1,313 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0 ,user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Rushi Ranpise" />
+	<meta name="classification" content="Covid-19 Dashboard" />
+	<meta name="description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
+	<meta name="keywords" content="corona, covid19, covid-19. safety, bhiarnath, badlapur, kalyan , dombivali , thane district, thane city , city , ulhasnagar , dashboard, tracking, page, open, source, github, disease, facebook, instagram, whatsapp, helpline, district, india" />
+	<meta name="referrer" content="origin-when-crossorigin" />
+	<meta name="robots" content="index,follow" />
+	<meta name="title" content="Covid-19 Dashboard" />
+	<title>Covid-19 Dashboard</title>
+	<link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+	<meta property="og:title" content="Covid-19 Dashboard">
+	<meta property="og:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar.">
+	<meta property="og:image" content="./icon.png">
+	<meta property="og:url" content="http://covid19-thane.github.io">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" value="@covid19thane" />
+	<meta property="twitter:url" content="https://covid19-thane.github.io" />
+	<meta property="twitter:title" content="Covid-19 Dashboard" />
+	<meta property="twitter:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
+	<meta property="twitter:image" content="./icon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<style>
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+	
+	html {
+		font-family: sans-serif;
+		line-height: 1.15;
+		-webkit-text-size-adjust: 100%;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	
+	body {
+		font-family: Open Sans, sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5;
+		margin: 0;
+		text-align: left;
+		color: #525f7f;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 0;
+		background-color: #fff;
+	}
+	
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: inherit;
+		font-weight: 700;
+		color: #32325f;
+		margin: 0;
+	}
+	
+	.text-muted {
+		color: #8898aa !important;
+	}
+	
+	.text-uppercase {
+		text-transform: uppercase !important;
+	}
+	
+	.text-white {
+		color: #fff !important;
+	}
+	
+	.shadow {
+		box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important;
+	}
+	
+	.rounded-circle {
+		border-radius: 15px !important;
+	}
+	
+	.font-weight-bold {
+		font-weight: 700 !important;
+	}
+	
+	.container {
+		width: 100%;
+		height: auto;
+		background: #f4f8fd;
+		border-radius: 15px;
+		padding: 10px;
+	}
+	
+	h1.title {
+		font-size: 1.4rem;
+		font-weight: 700;
+		text-align: center;
+		margin: 1rem 0;
+	}
+	
+	.col {
+		max-width: 100%;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+	
+	.card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		word-wrap: break-word;
+		border: 1px solid rgba(0, 0, 0, 0.05);
+		background-color: #fff;
+		background-clip: border-box;
+		border: 0;
+		box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+		border-radius: 15px;
+		margin: 10px;
+	}
+	
+	.card-body {
+		min-height: 1px;
+		padding: 1.5rem;
+		display: flex;
+		padding: 1rem 1.5rem;
+		border-radius: 15px;
+	}
+	
+	.card-body .h2 {
+		font-size: 2rem;
+	}
+	
+	.icon {
+		width: 4rem;
+		height: 4rem;
+		max-width: 100%;
+		flex: 0 0 auto;
+	}
+	
+	.icon-shape {
+		display: inline-flex;
+		padding: 12px;
+		text-align: center;
+		border-radius: 50%;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.icon-shape i,
+	.icon-shape svg {
+		font-size: 2rem;
+	}
+	
+	.bg-gradient-red {
+		background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+	}
+	
+	.bg-gradient-blue {
+		background: linear-gradient(87deg, #11cdef 0, #1171ef 100%) !important;
+	}
+	
+	.bg-gradient-green {
+		background: linear-gradient(87deg, #2dce89 0, #2dcecc 100%) !important;
+	}
+	
+	.bg-gradient-orange {
+		background: linear-gradient(87deg, #6c757d 0, #8898aa 100%) !important
+	}
+	
+	@media (min-width: 767px) {
+		.social {
+			position: absolute;
+			right: 0;
+			top: 33.33%;
+		}
+		.social ul {
+			display: flex;
+			flex-direction: column;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.social ul li {
+			margin: 5px 10px;
+		}
+		.social ul li a {
+			color: #403f4c;
+			font-size: 25px;
+			height: 50px;
+			width: 50px;
+			text-decoration: none;
+		}
+		.social ul li a:hover {
+			color: #272523;
+		}
+	}
+	</style>
+</head>
+
+<body style="height: auto; width: auto;">
+	<div class="container">
+		<!-- Card stats -->
+		<h1 class="title" style="
+    margin-top: 0px;
+    margin-bottom: 0px;
+"><nobr><img src="bhi.png" style="width:50px;  vertical-align:middle ;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #87ceeb;"><br>Bhiwandi City & Rural</nobr></h1>
+		<div class="card card-stats">
+			<!-- Card body -->
+			<div class="card-body" style="
+    padding-bottom: 0px;
+">
+				<div class="stat__item confirmedbhi col">
+					<h5 class="card-title text-uppercase text-muted">Total Cases<br><h5 style="color:#ff073a;">एकूण बाधित रुग्ण</h5></h5> <span class="number h2 font-weight-bold total color-red count">0</span> </div>
+				<div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow"> <i class="fas fa-users"></i> </div>
+			</div>
+			<div class="card card-stats" style="
+    margin-top: 0px;
+    
+">
+				<div class="stat__item confirmedbhi card-body" style="
+    padding-bottom: 10px;padding-top: 10px;
+">
+					<div class="col">
+						<h5 class="card-title text-uppercase text-muted">Today's Cases<br><h5 style="color:#ff073a;">आजचे  रुग्ण</h5></h5>
+					</div> <span class="new h1 font-weight-bold oldtotal color-red count">0</span> </div>
+			</div>
+		</div>
+		<div class="card card-stats">
+			<!-- Card body -->
+			<div class="card-body" style="
+    padding-bottom: 0px;
+">
+				<div class="stat__item activebhi col">
+					<h5 class="card-title text-uppercase text-muted">Active Cases<br><h5 style="color:#007bff;">रुग्णालयात दाखल </h5></h5> <span class="number h2 font-weight-bold total color-blue count">0</span>
+					<br>
+					<div style="width: 41px;white-space: nowrap;overflow: hidden;"><span class="bhiact h1" style="color:#3e39ae;">0</span></div>
+				</div>
+				<div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow"> <i class="fas fa-procedures"></i> </div>
+			</div>
+		</div>
+		<div class="card card-stats">
+			<!-- Card body -->
+			<div class="card-body" style="
+    padding-bottom: 0px;
+">
+				<div class="stat__item recoveredbhi col">
+					<h5 class="card-title text-uppercase text-muted">Recovered Cases<br><h5 style="color:#28a745;"> बरे झालेले रुग्ण</h5></h5> <span class="number h2 font-weight-bold total color-green count">0</span>
+					<div style="width: 41px;white-space: nowrap;overflow: hidden;"><span class="bhirec h1" style="color:#3e39ae;">0</span></div>
+				</div>
+				<div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow"> <i class="fas fa-child"></i> </div>
+			</div>
+			<div class="card card-stats" style="
+    margin-top: 0px;
+    
+">
+				<div class="stat__item recoveredbhi card-body" style="
+    padding-bottom: 10px;padding-top: 10px;
+">
+					<div class="stat__item recoveredbhi col">
+						<h5 class="card-title text-uppercase text-muted">Today's Cases<br><h5 style="color:#28a745;">आजचे  रुग्ण</h5></h5>
+					</div> <span class="new h1 font-weight-bold oldtotal color-red count">0</span> </div>
+			</div>
+		</div>
+		<div class="card card-stats">
+			<!-- Card body -->
+			<div class="card-body" style="
+    padding-bottom: 0px;
+">
+				<div class="stat__item deceasedbhi col">
+					<h5 class="card-title text-uppercase text-muted">Deceased Cases<br><h5 style="color:#6c757d;">मृत्यू झालेले रुग्ण</h5></h5> <span class="number h2 font-weight-bold total color-orange count">0</span>
+					<div style="width: 41px;white-space: nowrap;overflow: hidden;"><span class="bhidec h1" style="color:#3e39ae;">0</span></div>
+					<br> </div>
+				<div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow"> <i class="fas fa-user-alt-slash"></i> </div>
+			</div>
+			<div class="card card-stats" style="
+    margin-top: 0px;
+    
+">
+				<div class="stat__item deceasedbhi card-body" style="
+    padding-bottom: 10px;padding-top: 10px;
+">
+					<div class="stat__item deceasedbhi col">
+						<h5 class="card-title text-uppercase text-muted">Today's Cases<br><h5 style="color:#6c757d;">आजचे  रुग्ण</h5> </h5>
+					</div> <span class="new h1 font-weight-bold oldtotal color-red count">0</span> </div>
+			</div>
+		</div>
+	</div>
+	<p style="text-align:center;font-size:12px;font-weight:600">&#10095; &nbsp; More Info at <a href="http://covid19-thane.github.io/" style="text-decoration:none;color:#4c75f2">COVID-19 Thane Dashboard</a></p>
+	<script src="./js/bhi.js"></script>
+</body>
+
+</html>
