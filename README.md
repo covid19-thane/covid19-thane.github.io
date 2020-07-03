@@ -1,23 +1,19 @@
-<img src="https://img.icons8.com/office/50/000000/coronavirus.png"/>
-
-<div>
- 
-[![Viewers](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio.svg)](http://hits.dwyl.com/covid19-thane/covid19-thanegithubio)
-</div>
+<img src="https://raw.githubusercontent.com/covid19-thane/covid19-thane.github.io/master/icon.png"/>
+<img src="https://hits.dwyl.com/covid19-thane/covid19-thanegithubio.svg"/>
 
 # Corona Virus Situation in Thane District, India.
 
 This is An Unoffical Covid-19 Dashboard  for Ambarnath (AMC) , Badlapur (KBMC) , Bhiwandi , Kalyan & Dombivli (KDMC) , Mira Bhayandar (MBMC) , Navi Mumbai (NMMC) ,Thane (TMC) , Ulhasnagar (UMC).
 
-# FAQ
+# FAQ :-
 
 1.Are you official?
 -----------------
 No :/
 
-2.New Cases are shown Zero!
+2.New Cases are not being shown!
 -
-Yes, while the data is being updated, dashboard shows 0 new cases!
+Yes, while the data is being updated, dashboard shows ( ↑ 🔃 ) instead of new cases!
 So please visit back after some time. Usually it is due to delayed press reports.
 
 3.Are the Numbers on the Dashboard Real or Fake?
@@ -32,9 +28,18 @@ Mostly till 9pm, But due to delay in press reports it may vary.
 -
 [Here](https://covid19-thane.github.io/#source)
 
-6.The dashboard is showing wrong numbers!
+6.Thane District total is not matching the table total?
 -
-Contact me to fix it :)
+Its because the dashboard shows only major cities and in district total small area/cities are also included.
+Moreover you can check the numbers [here](https://experience.arcgis.com/experience/8167a61f882a4af4b9098e947dfd589f/)
+
+7.XYZ City's Press note is not shown!
+-
+Because Its not available.
+
+8.The dashboard is showing wrong numbers!
+-
+Contact me to fix it, might be a human error! :)
 
 # Municipal Corporation Sites :-
 
@@ -94,7 +99,7 @@ Ulhasnagar (UMC) :-
 
 [Following Twitter Users](https://twitter.com/Covid19Thane/following)
 
-# Social
+# Social :-
 
 [Dashboard](https://covid19-thane.github.io)
 
@@ -106,5 +111,4 @@ Ulhasnagar (UMC) :-
 
 [Telegram](https://t.me/Covid19Thane)
 
-# Contact Me
-[Rushi Ranpise](https://t.me/rushiranpise)
+# [Contact Me](https://t.me/rushiranpise)
