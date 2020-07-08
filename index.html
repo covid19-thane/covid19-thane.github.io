@@ -25,14 +25,14 @@
 	<meta property="twitter:title" content="Covid-19 Dashboard" />
 	<meta property="twitter:description" content="An unoffical Covid-19 Dashboard for Ambarnath, Badlapur, Bhiwandi, Kalyan & Dombivali (KDMC), Thane District, Ulhasnagar." />
 	<meta property="twitter:image" content="./icon.png" />
-	<link rel="preload" importance="low" href="/fonts/Archia/archia-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-	<link rel="preload" importance="low" href="/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-	<link rel="preload" importance="low" href="/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" importance="low" href="./fonts/Archia/archia-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" importance="low" href="./fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" importance="low" href="./fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<style>
 	@font-face {
 		font-family: Archia;
-		src: url(/fonts/Archia/archia-semibold-webfont.eot);
-		src: local('Archia'), url(/fonts/Archia/archia-semibold-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-semibold-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-semibold-webfont.woff) format('woff'), url(/fonts/Archia/archia-semibold-webfont.ttf) format('truetype');
+		src: url(./fonts/Archia/archia-semibold-webfont.eot);
+		src: local('Archia'), url(./fonts/Archia/archia-semibold-webfont.eot?#iefix) format('embedded-opentype'), url(./fonts/Archia/archia-semibold-webfont.woff2) format('woff2'), url(./fonts/Archia/archia-semibold-webfont.woff) format('woff'), url(./fonts/Archia/archia-semibold-webfont.ttf) format('truetype');
 		font-weight: 600;
 		font-style: normal;
 		font-display: swap
@@ -40,8 +40,8 @@
 	
 	@font-face {
 		font-family: Archia;
-		src: url(/fonts/Archia/archia-medium-webfont.eot);
-		src: local('Archia'), url(/fonts/Archia/archia-medium-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-medium-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-medium-webfont.woff) format('woff'), url(/fonts/Archia/archia-medium-webfont.ttf) format('truetype');
+		src: url(./fonts/Archia/archia-medium-webfont.eot);
+		src: local('Archia'), url(./fonts/Archia/archia-medium-webfont.eot?#iefix) format('embedded-opentype'), url(./fonts/Archia/archia-medium-webfont.woff2) format('woff2'), url(./fonts/Archia/archia-medium-webfont.woff) format('woff'), url(./fonts/Archia/archia-medium-webfont.ttf) format('truetype');
 		font-weight: 400;
 		font-style: normal;
 		font-display: swap
@@ -49,8 +49,8 @@
 	
 	@font-face {
 		font-family: Archia;
-		src: url(/fonts/Archia/archia-bold-webfont.eot);
-		src: local('Archia'), url(/fonts/Archia/archia-bold-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/Archia/archia-bold-webfont.woff2) format('woff2'), url(/fonts/Archia/archia-bold-webfont.woff) format('woff'), url(/fonts/Archia/archia-bold-webfont.ttf) format('truetype');
+		src: url(./fonts/Archia/archia-bold-webfont.eot);
+		src: local('Archia'), url(./fonts/Archia/archia-bold-webfont.eot?#iefix) format('embedded-opentype'), url(./fonts/Archia/archia-bold-webfont.woff2) format('woff2'), url(./fonts/Archia/archia-bold-webfont.woff) format('woff'), url(./fonts/Archia/archia-bold-webfont.ttf) format('truetype');
 		font-weight: 900;
 		font-style: normal;
 		font-display: swap
@@ -293,23 +293,23 @@ maintaining at least 1m (3ft) between you and others.
 					<thead>
 						<tr>
 							<th class="state-heading">
-								<div class="heading-content"> <abbr title="State">City</abbr>
+								<div class="heading-content" style="display: flex;"> <abbr title="State">City</abbr>
 									<div style="display: initial;">
 										<div class="arrow-down"></div>
 									</div>
 								</div>
 							</th>
 							<th>
-								<div class="heading-content"> <abbr class="is-confirmed" title="confirmed">Confirmed</abbr> </div>
+								<div class="heading-content"> <abbr class="is-confirmed" title="confirmed">C</abbr> </div>
 							</th>
 							<th style=" padding-left: 4px; padding-right: 4px; ">
-								<div class="heading-content"> <abbr class="is-active" title="active">Active</abbr> </div>
+								<div class="heading-content"> <abbr class="is-active" title="active">A</abbr> </div>
 							</th>
 							<th>
-								<div class="heading-content"> <abbr class="is-recovered" title="recovered">Recovered</abbr> </div>
+								<div class="heading-content"> <abbr class="is-recovered" title="recovered">R</abbr> </div>
 							</th>
 							<th>
-								<div class="heading-content"> <abbr class="is-deaths" title="deaths">Deceased</abbr> </div>
+								<div class="heading-content"> <abbr class="is-deaths" title="deaths">D</abbr> </div>
 							</th>
 						</tr>
 					</thead>
@@ -321,11 +321,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmedamb"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -339,11 +335,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoveredamb"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="ambrec notranslate">🔃</span></div></span>
 								</div>
@@ -351,11 +343,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasedamb"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="ambdec notranslate">🔃</span></div></span>
 								</div>
@@ -368,11 +356,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmedbad"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -386,11 +370,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoveredbad"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="badrec notranslate">🔃</span></div></span>
 								</div>
@@ -398,11 +378,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasedbad"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="baddec notranslate">🔃</span></div></span>
 								</div>
@@ -415,11 +391,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmedbhi"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -433,11 +405,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoveredbhi"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="bhirec notranslate">🔃</span></div></span>
 								</div>
@@ -445,11 +413,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasedbhi"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="bhidec notranslate">🔃</span></div></span>
 								</div>
@@ -462,11 +426,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmedkal"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -480,11 +440,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoveredkal"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="kalrec notranslate">🔃</span></div></span>
 								</div>
@@ -492,11 +448,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasedkal"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="kaldec notranslate">🔃</span></div></span>
 								</div>
@@ -509,11 +461,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmedmb"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -527,11 +475,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoveredmb"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="mirarec notranslate">🔃</span></div></span>
 								</div>
@@ -539,11 +483,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasedmb"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="miradec notranslate">🔃</span></div></span>
 								</div>
@@ -556,11 +496,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmedmur"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -574,11 +510,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoveredmur"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="murrec notranslate">🔃</span></div></span>
 								</div>
@@ -586,11 +518,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasedmur"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="murdec notranslate">🔃</span></div></span>
 								</div>
@@ -603,11 +531,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmednm"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -621,11 +545,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoverednm"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="nmrec notranslate">🔃</span></div></span>
 								</div>
@@ -633,11 +553,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasednm"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="nmdec notranslate">🔃</span></div></span>
 								</div>
@@ -650,11 +566,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmedthane"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -668,11 +580,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoveredthane"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="tharec notranslate">🔃</span></div></span>
 								</div>
@@ -680,11 +588,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasedthane"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="thadec notranslate">🔃</span></div></span>
 								</div>
@@ -697,11 +601,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item confirmedul"> <span class="delta is-confirmed">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 								<br><span class="delta is-confirmed" style="color:#3e39ae;">% →</span>
 								</div>
@@ -715,11 +615,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item recoveredul"> <span class="delta is-recovered">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-recovered"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="ulrec notranslate">🔃</span></div></span>
 								</div>
@@ -727,11 +623,7 @@ maintaining at least 1m (3ft) between you and others.
 							<td>
 								<div class="stat__item deceasedul"> <span class="delta is-deaths">
                                                           <sup>
-                                                            <svg
-                                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                              <line x1="12" y1="19" x2="12" y2="5"></line>
-                                                              <polyline points="5 12 12 5 19 12"></polyline>
-                                                            </svg>
+                                                            ↑
                                                             <span class="new"></span> </sup>&nbsp; <span class="number notranslate" style="color:#616161">🔃</span> </span>
 															<br><span class="delta is-deaths"><div style=" color:#3e39ae;width: 29px;white-space: nowrap;overflow: hidden;"><span class="uldec notranslate">🔃</span></div></span>
 								</div>
@@ -765,25 +657,10 @@ maintaining at least 1m (3ft) between you and others.
                                                 <a href="#googtrans(en|en)" class="lang-es lang-select" data-lang="ja">#English</a>
 					<br><br>
 					<a href="#source" style="color:#4c75f2;">👉 &nbsp;Click Here For Detailed Reports!&nbsp; 👈</a><br><br>
-					<a href="https://mygov.in/aarogya-setu-app/" style="color:#4c75f2;">👉 &nbsp;Download Aarogya Setu Mobile App&nbsp; 👈</a></center><br>
-					<marquee bgcolor="#111" style="color:#fff;"><b style="color:red;">Important Note :</b>&nbsp;&nbsp; To differenttiate between todays new cases & Also due to delay of Press Report , <b class="notranslate">( ↑ 🔃 )</b> icon is shown for a city . Please Visit Back the Dashboard Later , it will be updated as soon as possible.</marquee>
+					<a href="https://mygov.in/aarogya-setu-app/" style="color:#4c75f2;">👉 &nbsp;Download Aarogya Setu Mobile App&nbsp; 👈</a></center>
 				</h5><br>
-				<div class="pills fadeInUp" class="header fadeInUp" style="animation-delay: 2s;">
-					<button type="button" onclick="window.location.href='https://covid19-thane.github.io/faq/';">F.A.Q</button>
-				</div>
-				<br>
-				<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👪 Visitors:&nbsp;
-                                                  <a>
-                                                    <img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7349627&style=0007&nbdigits=8&type=ip&initCount=0" title="Visitors" Alt="Visitors" border="0">
-                                                    </a>
-                                                    <h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👀 Refreshs:&nbsp;
-                                                      <a>
-                                                        <img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7351848&style=0007&nbdigits=8&type=page&initCount=287" title="Web Counter" Alt="Web Counter" border="0">
-                                                        </a>
-                                                      </h5> 
-					<br>
-					<iframe src="https://cdn.abplive.com/corona-html/corona-updated/corona-widget-new.html?lang=en" width="100%" height="235px" allowfullscreen="true" frameborder="0" style="max-width: 310px; border:none; pointer-events: none;"></iframe><br>
-<center>
+				 
+					<center>
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 			<div class="numbertext">1 / 5</div>
@@ -814,11 +691,24 @@ maintaining at least 1m (3ft) between you and others.
 	  <span class="dot"></span>
 	  <span class="dot"></span>
 	</div>
-</center>
+</center><br>
+<div class="pills fadeInUp" class="header fadeInUp" style="animation-delay: 2s;">
+					<button type="button" onclick="window.location.href='https://covid19-thane.github.io/faq/';">F.A.Q</button>
+				</div>
+				<br>
+				<h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👪 Visitors:&nbsp;
+                                                  <a>
+                                                    <img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7349627&style=0007&nbdigits=8&type=ip&initCount=0" title="Visitors" Alt="Visitors" border="0">
+                                                    </a>
+                                                    <h5 class="table-fineprint fadeInUp" style="animation-delay: 2s; color:#6c757d;">👀 Refreshs:&nbsp;
+                                                      <a>
+                                                        <img class="fadeInUp" style="animation-delay: 2s;" src="https://hitwebcounter.com/counter/counter.php?page=7351848&style=0007&nbdigits=8&type=page&initCount=287" title="Web Counter" Alt="Web Counter" border="0">
+                                                        </a>
+                                                      </h5>
 					</div>
 		</div>
 	</div>
-	<footer class="fadeInUp" style="animation-delay: 2s;">
+	<footer class="fadeInUp" style="animation-delay: 2s; margin-top: 0px;">
 		<h5>#StayHome #StaySafe</h5>
 		<div class="link"> <a href="https://covid19-thane.github.io/hospitals" target="_blank" rel="noopener noreferrer">covid19thane hospitals</a> </div> <a class="button excel" href="https://api.whatsapp.com/send?text=https://covid19-thane.github.io%20Hey%20there!%20Check%20out%20this%20Covid-19%20Dashboard%20For%20Thane%20District,Thane%20City,KDMC,Navi%20Mumbai,Mira%20Bhayandar,Ambarnath,Badlapur,Bhiwandi,Ulhasnagar!%20Get%20the%20Real%20No.%20of%20%20Covid-19%20cases%20in%20your%20Area!%20Stay%20Away%20From%20Fake%20News!%20#Stay%20Home%20#Stay%20Safe!%20" target="_blank" rel="noopener noreferrer">
         &nbsp;&nbsp;
@@ -842,10 +732,6 @@ maintaining at least 1m (3ft) between you and others.
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 				<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
 			</svg> <span>Join Telegram Group</span> </a>
-		<br />
-		<div style="height: auto; width: auto;" id="source"> <a class="twitter-timeline" href="https://twitter.com/Covid19Thane?ref_src=twsrc%5Etfw">Tweets by Covid19Thane</a>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
 	</footer>
 	<script>
 	var slideIndex = 0;
