@@ -1495,7 +1495,7 @@ table thead th:hover {
 
 table .heading-content {
   align-items: center;
-  display: flex;
+  text-align: center;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
