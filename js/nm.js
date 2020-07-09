@@ -27,4 +27,8 @@ fetch(nm)
       myData[4] / myData[0] * 100 }`;  
     document.querySelector(".nmdec").textContent =`${
       myData[1] / myData[0] * 100 }`;
+    document.querySelector(".stat__item.tests_nm .number").textContent =
+      myData[6];
+    document.querySelector(".stat__item.tests_nm .new").textContent =`${
+      myData[6] - myData[7]}`; 
   });
