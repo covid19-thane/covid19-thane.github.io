@@ -26,5 +26,9 @@ fetch(ul)
     document.querySelector(".ulrec").textContent =`${
       myData[4] / myData[0] * 100 }`;  
     document.querySelector(".uldec").textContent =`${
-      myData[1] / myData[0] * 100 }`; 
+      myData[1] / myData[0] * 100 }`;
+    document.querySelector(".stat__item.tests_ul .number").textContent =
+      myData[6];
+    document.querySelector(".stat__item.tests_ul .new").textContent =`${
+      myData[6] - myData[7]}`; 
   });
