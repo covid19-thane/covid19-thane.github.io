@@ -26,5 +26,9 @@ fetch(mur)
     document.querySelector(".murrec").textContent =`${
       myData[4] / myData[0] * 100 }`;  
     document.querySelector(".murdec").textContent =`${
-      myData[1] / myData[0] * 100 }`; 
+      myData[1] / myData[0] * 100 }`;
+    document.querySelector(".stat__item.tests_mur .number").textContent =
+      myData[6];
+    document.querySelector(".stat__item.tests_mur .new").textContent =`${
+      myData[6] - myData[7]}`; 
   });
