@@ -26,5 +26,9 @@ fetch(bhi)
     document.querySelector(".bhirec").textContent =`${
       myData[4] / myData[0] * 100 }`;  
     document.querySelector(".bhidec").textContent =`${
-      myData[1] / myData[0] * 100 }`; 
+      myData[1] / myData[0] * 100 }`;
+    document.querySelector(".stat__item.tests_bhi .number").textContent =
+      myData[6];
+    document.querySelector(".stat__item.tests_bhi .new").textContent =`${
+      myData[6] - myData[7]}`; 
   });
