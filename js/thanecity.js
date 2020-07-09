@@ -27,4 +27,8 @@ fetch(thanec)
       myData[4] / myData[0] * 100 }`;  
     document.querySelector(".thadec").textContent =`${
       myData[1] / myData[0] * 100 }`;
+    document.querySelector(".stat__item.tests_tha .number").textContent =
+      myData[6];
+    document.querySelector(".stat__item.tests_tha .new").textContent =`${
+      myData[6] - myData[7]}`; 
   });
