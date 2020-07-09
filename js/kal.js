@@ -27,4 +27,8 @@ fetch(kal)
       myData[4] / myData[0] * 100 }`;  
     document.querySelector(".kaldec").textContent =`${
       myData[1] / myData[0] * 100 }`;
+    document.querySelector(".stat__item.tests_kdmc .number").textContent =
+      myData[6];
+    document.querySelector(".stat__item.tests_kdmc .new").textContent =`${
+      myData[6] - myData[7]}`; 
   });
