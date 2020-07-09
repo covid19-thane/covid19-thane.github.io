@@ -27,4 +27,8 @@ fetch(mn)
       myData[4] / myData[0] * 100 }`;  
     document.querySelector(".miradec").textContent =`${
       myData[1] / myData[0] * 100 }`;
+    document.querySelector(".stat__item.tests_mira .number").textContent =
+      myData[6];
+    document.querySelector(".stat__item.tests_mira .new").textContent =`${
+      myData[6] - myData[7]}`; 
   });
