@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/covid19-thane/covid19-thane.github.io/master/icon.png"/>
+<img src="https://raw.githubusercontent.com/covid19-thane/covid19-thane.github.io/master/images/icon.png"/>
 <img src="https://hits.dwyl.com/covid19-thane/covid19-thanegithubio.svg"/>
 
 # Corona Virus Situation in Thane District, India.
