@@ -5,6 +5,36 @@
 
 This is An Unoffical Covid-19 Dashboard  for Ambarnath (AMC) , Badlapur (KBMC) , Bhiwandi , Kalyan & Dombivli (KDMC) , Mira Bhayandar (MBMC) , Navi Mumbai (NMMC) ,Thane (TMC) , Ulhasnagar (UMC).
 
+# Specific :-
+
+[Ambarnath](http://covid19-thane.github.io/ambarnath)
+
+[Badlapur](http://covid19-thane.github.io/badlapur)
+
+[Bhiwandi](http://covid19-thane.github.io/bhiwandi)
+
+[KDMC](http://covid19-thane.github.io/kdmc)
+
+[Mira Bhayandar](http://covid19-thane.github.io/mbmc)
+
+[Navi Mumbai](http://covid19-thane.github.io/navimumbai)
+
+[Thane](http://covid19-thane.github.io/thane)
+
+[Ulhasnagar](http://covid19-thane.github.io/ulhasnagar)
+
+# Social :-
+
+[Dashboard](https://covid19-thane.github.io)
+
+[Hospitals](https://covid19-thane.github.io/hospitals)
+
+[Instagram](https://instagram.com/Covid19Thane)
+
+[Twitter](https://twitter.com/Covid19Thane)
+
+[Telegram](https://t.me/Covid19Thane)
+
 # FAQ :-
 
 1.Are you official?
@@ -28,7 +58,7 @@ Mostly till 9pm, But due to delay in press reports it may vary.
 -
 [Here](https://covid19-thane.github.io/#source)
 
-6.Thane District total is not matching the table total?
+6.Thane District numbers is not matching the table total?
 -
 Its because the dashboard shows only major cities and in district total small area/cities are also included.
 Moreover you can check the numbers [here](https://experience.arcgis.com/experience/8167a61f882a4af4b9098e947dfd589f/)
@@ -37,8 +67,24 @@ Moreover you can check the numbers [here](https://experience.arcgis.com/experien
 -
 Because Its not available.
 
-8.The dashboard is showing wrong numbers!
+8.How is Active Count Calculated?
 -
+Total - Recovered - Deaths = Active
+
+9.How are Percentage Calculated?
+-
+Active   - (Active/Total)*100
+
+Recovery - (Recovery/Total)*100
+
+Deaths   - (Deaths/Total)*100
+
+Note:- For Recovery % Thane does (Recovery/(Total-Deaths)]*100 So,it may slightly differ ....
+
+10.The dashboard is showing wrong numbers!
+-
+Well,Chances are low...  
+But,still............
 Contact me to fix it, might be a human error! :)
 
 # Municipal Corporation Sites :-
@@ -87,28 +133,16 @@ Ulhasnagar (UMC) :-
 
 [For Navi Mumbai](https://navimumbai.city/)
 
-[For Most Mumbai Regions](https://www.cotracker.in/)
-
 # Special Thanks to Following Projects :-
 
-[Coders-Of-XDA-OT](https://github.com/Coders-Of-XDA-OT/)
+[Coders-Of-XDA-OT](https://github.com/Coders-Of-XDA-OT/coronaSafety/)
 
-[Covid19India](https://github.com/covid19india/)
+[Covid19India](https://github.com/covid19india/covid19india-react/)
 
 # Special Thanks to Twitter Users :-
 
 [Following Twitter Users](https://twitter.com/Covid19Thane/following)
 
-# Social :-
-
-[Dashboard](https://covid19-thane.github.io)
-
-[Hospitals](https://covid19-thane.github.io/hospitals)
-
-[Instagram](https://instagram.com/Covid19Thane)
-
-[Twitter](https://twitter.com/Covid19Thane)
-
-[Telegram](https://t.me/Covid19Thane)
+# Special Thanks to All those who help me with the data stuff.
 
 # [Contact Me](https://t.me/rushiranpise)
