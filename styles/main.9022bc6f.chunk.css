@@ -1495,7 +1495,7 @@ table thead th:hover {
 
 table .heading-content {
   align-items: center;
-  text-align: center;
+  
   flex-direction: row;
   justify-content: space-between;
   position: relative;
@@ -1570,7 +1570,7 @@ table tbody td {
   border-radius: 4px;
   font-size: .9rem;
   padding: .25rem;
-  text-align: right;
+  text-align: end;
 }
 
 table tbody td:first-child {
