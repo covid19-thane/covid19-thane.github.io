@@ -2047,13 +2047,13 @@ table .dropdown svg {
 
 .MapExplorer .map-stats .stats {
   background: rgba(255,7,58,.12549);
-  border-radius: 5px;
+  border-radius: 10px;
   color: rgba(255,7,58,.6);
   cursor: pointer;
   display: flex;
   flex: 1 1;
   flex-direction: column;
-  margin-bottom: 1rem;
+
   margin-left: .25rem;
   margin-right: .25rem;
   padding: .25rem;
@@ -4558,7 +4558,7 @@ footer img {
 }
 
 .dark-mode .expand .navbar-right,.dark-mode .Navbar .navbar-right,.dark-mode table .is-odd,.dark-mode table th {
-  background: #27272727!important;
+  background: #181819!important;
 }
 
 .dark-mode table .state-page-link {
