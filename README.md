@@ -41,7 +41,7 @@ The last snapshot of the dashboard as of 2020-August-11 IST is [here](https://co
 
 👀 Refreshs: 415229
 
-<img src="https://hits.dwyl.com/covid19-thane/shutdown.svg"/>
+<img src="https://gpvc.arturio.dev/covid19-thane">
 
 ### Remember !
 Its not about who shares the information first!
