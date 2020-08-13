@@ -37,9 +37,9 @@ The last snapshot of the dashboard as of 2020-August-11 IST is [here](https://co
 
 ### May 17 2020 - August 11 2020 (86 days)
 
-👪 Visitors:
+👪 Visitors: 131574
 
-👀 Refreshs:
+👀 Refreshs: 415229
 
 <img src="https://hits.dwyl.com/covid19-thane/covid19-thanegithubio/shutdown.svg"/>
 
