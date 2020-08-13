@@ -1,148 +1,76 @@
-<img src="https://raw.githubusercontent.com/covid19-thane/covid19-thane.github.io/master/images/icon.png"/>
-<img src="https://hits.dwyl.com/covid19-thane/covid19-thanegithubio.svg"/>
+## We are shutting down!
 
-# Corona Virus Situation in Thane District, India.
+<div align="center">
+<img src="https://github.com/covid19-thane/covid19-thane.github.io/blob/master/undraw_clean_up_ucm0.png?raw=true">
+<h2>Hey<img src="https://raw.githubusercontent.com/rushiranpise/rushiranpise/master/gifs/Hi.gif" width="30px"><br><br>My name is <br><br><code>Rushi Ranpise.</code><br><br><code>I'm 19 years old.</code></h2>
+</div>  
 
-This is An Unoffical Covid-19 Dashboard  for Ambarnath (AMC) , Badlapur (KBMC) , Bhiwandi , Kalyan & Dombivli (KDMC) , Mira Bhayandar (MBMC) , Navi Mumbai (NMMC) ,Thane (TMC) , Ulhasnagar (UMC).
+On 21 July, I was tested positive for covid19.
 
-# Specific :-
+While I was under treatment, one of my friend 
 
-[Ambarnath](http://covid19-thane.github.io/ambarnath)
+contiuned updating the dashboard.
 
-[Badlapur](http://covid19-thane.github.io/badlapur)
+Though Fortunately, I recovered from it recently.
 
-[Bhiwandi](http://covid19-thane.github.io/bhiwandi)
+But everything isn't same anymore...
 
-[KDMC](http://covid19-thane.github.io/kdmc)
+You might have wondering Why now a days 
 
-[Mira Bhayandar](http://covid19-thane.github.io/mbmc)
+data on thane dashboard link is not getting updated?
 
-[Navi Mumbai](http://covid19-thane.github.io/navimumbai)
+The reason is,
 
-[Thane](http://covid19-thane.github.io/thane)
+Maintaining this project without much of contributions was really hard!
 
-[Ulhasnagar](http://covid19-thane.github.io/ulhasnagar)
+Getting true information and reliable content was also a challenge.
 
-# Social :-
+Therefore, I've decided to shut down this project.
 
-[Dashboard](https://covid19-thane.github.io)
+In case you want to get in touch with me for future collaboration, please find the contact details below.
 
-[Hospitals](https://covid19-thane.github.io/hospitals)
+I hope that my efforts were helpful to keep you informed.
 
-[Instagram](https://instagram.com/Covid19Thane)
+### Stay Home , Stay Safe , Stay Calm , Be Informed.
 
-[Twitter](https://twitter.com/Covid19Thane)
+The last snapshot of the dashboard as of 2020-August-11 IST is [here](https://covid19-thane.github.io/snapshot)
 
-[Telegram](https://t.me/Covid19Thane)
+### May 17 2020 - August 11 2020 (86 days)
 
-# FAQ :-
+👪 Visitors:
 
-1.Are you official?
------------------
-No :/
+👀 Refreshs:
 
-2.New Cases are not being shown!
--
-Yes, while the data is being updated, dashboard shows ( ↑ 🔃 ) instead of new cases!
-So please visit back after some time. Usually it is due to delayed press reports.
+<img src="https://hits.dwyl.com/covid19-thane/covid19-thanegithubio/shutdown.svg"/>
 
-3.Are the Numbers on the Dashboard Real or Fake?
--
-The Numbers are 100% real, as they are compiled from Press Reports of respected Municipal Corporations.
+### Remember !
+Its not about who shares the information first!
+"Its about sharing the correct,authentic & verified information"
+People usually forward messages without checking its source/authenticity
+This creates unusual panic in the society
+So think about it before you forward. 
+#BeTheChange
 
-4.When is the Dashboard Updated Fully?
--
-Mostly till 9pm, But due to delay in press reports it may vary.
-
-5.Where Can i get detalied Report on Cases?
--
-[Here](https://covid19-thane.github.io/#source)
-
-6.Thane District numbers is not matching the table total?
--
-Its because the dashboard shows only major cities and in district total small area/cities are also included.
-Moreover you can check the numbers [here](https://experience.arcgis.com/experience/8167a61f882a4af4b9098e947dfd589f/)
-
-7.XYZ City's Press note is not shown!
--
-Because Its not available.
-
-8.How is Active Count Calculated?
--
-Total - Recovered - Deaths = Active
-
-9.How are Percentage Calculated?
--
-Active   - (Active/Total)*100
-
-Recovery - (Recovery/Total)*100
-
-Deaths   - (Deaths/Total)*100
-
-Note:- For Recovery % Thane does (Recovery/(Total-Deaths)]*100 So,it may slightly differ ....
-
-10.The dashboard is showing wrong numbers!
--
-Well,Chances are low...  
-But,still............
-Contact me to fix it, might be a human error! :)
-
-# Municipal Corporation Sites :-
-
-[Ambarnath (AMC)](https://ambarnathcouncil.net/)
-
-[Badlapur (KBMC)](https://kbmc.gov.in/)
-
-[Bhiwandi](https://bncmc.gov.in/)
-
-[Kalyan & Dombivli (KDMC)](https://www.kdmc.gov.in/)
-
-[Mira Bhayandar (MBMC)](https://www.mbmc.gov.in/)
-
-[Navi Mumbai (NMMC)](https://www.nmmc.gov.in/)
-
-[Thane (TMC)](https://thanecity.gov.in/)
-
-[Ulhasnagar (UMC)](https://umc.gov.in/)
-
-# Official Dashboards of Municipal Corporations :-
-
-[Kalyan & Dombivli (KDMC)](https://kdmc-coronavirus-response-skdcl.hub.arcgis.com/)
-
-[Mumbai (BMC)](https://stopcoronavirus.mcgm.gov.in/)
-
-[Navi Mumbai (NMMC)](http://nmmccovid19.in/)
-
-[Panvel](http://panvelcovidcare.cdaat.in/)
-
-[Thane (TMC)](https://essentials.thanecity.gov.in/)
-
-Ulhasnagar (UMC) :-
-
-[Dashboard 1](http://covid.umcgov.in/dashboard2.aspx)
-
-[Dashboard 2](https://arcg.is/rPOTq)
-
-[Vasai Virar](https://vvcmc.in/vvmc/corona/local_host/index.html)
-
-# Some Unofficial Dashboards :-
-
-[For India](https://www.covid19india.org/)
-
-[For Bhiwandi](https://bhiwandi.xyz/)
-
-[For Navi Mumbai](https://navimumbai.city/)
-
-# Special Thanks to Following Projects :-
+### Special Thanks to Following Projects :-
 
 [Coders-Of-XDA-OT](https://github.com/Coders-Of-XDA-OT/coronaSafety/)
 
 [Covid19India](https://github.com/covid19india/covid19india-react/)
 
-# Special Thanks to Twitter Users :-
+### Special Thanks to Twitter Users :-
 
 [Following Twitter Users](https://twitter.com/Covid19Thane/following)
 
-# Special Thanks to All those who help me with the data stuff.
+### Special Thanks to All those who help me with the data stuff.
 
-# [Contact Me](https://t.me/rushiranpise)
+### Support or Contact
+
+[Twitter](https://twitter.com/covid19thane)
+
+[Ping me on Telegram](https://t.me/rushiranpise)
+
+[Telegram Group](https://t.me/covid19thane)
+
+[Telegram Channel](https://t.me/covid19thanepdates)
+
+### Thank YOU.
